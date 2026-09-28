@@ -586,7 +586,7 @@ button,input,select,textarea{font:inherit}
   --event-gold:#8c5510;
   background:
     linear-gradient(rgba(255,216,70,.12),rgba(210,133,0,.10)),
-    url("images/haldi-ceremony.svg") center/cover no-repeat;
+    url("images/haldi-ceremony.svg") center / 100% 100% no-repeat;
   border-color:#a46b18;
 }
 .haldi:before{border-color:rgba(116,50,16,.28)}
@@ -600,7 +600,7 @@ button,input,select,textarea{font:inherit}
   --event-gold:#efca72;
   background:
     linear-gradient(rgba(8,2,14,.08),rgba(8,2,14,.08)),
-    url("images/sangeet-ceremony.svg") center/cover no-repeat;
+    url("images/sangeet-ceremony.svg") center / 100% 100% no-repeat;
   border-color:rgba(239,202,114,.62);
 }
 .sangeet:before{border-color:rgba(239,202,114,.34)}
@@ -614,7 +614,7 @@ button,input,select,textarea{font:inherit}
   --event-gold:#f0ca72;
   background:
     linear-gradient(rgba(54,3,15,.05),rgba(54,3,15,.08)),
-    url("images/wedding-ceremony.svg") center/cover no-repeat;
+    url("images/wedding-ceremony.svg") center / 100% 100% no-repeat;
   border-color:rgba(240,202,114,.65);
 }
 .wedding:before{border-color:rgba(240,202,114,.38)}
@@ -628,7 +628,7 @@ button,input,select,textarea{font:inherit}
   --event-gold:#f0ca72;
   background:
     linear-gradient(rgba(1,5,11,.18),rgba(1,5,11,.18)),
-    url("images/reception-ceremony.svg") center/cover no-repeat;
+    url("images/reception-ceremony.svg") center / 100% 100% no-repeat;
   border-color:rgba(240,202,114,.58);
 }
 .reception:before{border-color:rgba(240,202,114,.34)}
