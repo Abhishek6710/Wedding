@@ -41,3 +41,9 @@
 @keyframes rangoliAppear{from{opacity:0;transform:translate(-50%,-50%) scale(.72) rotate(-25deg)}to{opacity:1;transform:translate(-50%,-50%) scale(1) rotate(0)}}
 @keyframes particleTwinkle{from{opacity:.25}to{opacity:.6}}
 @media(prefers-reduced-motion:reduce){.hero-inner{transform:none!important}.event.reveal{opacity:1!important;transform:none!important}}
+
+/* Preserve each celebration's rich background after the borderless redesign */
+.haldi{background:radial-gradient(circle at 50% 50%,#fff7b855,transparent 45%),linear-gradient(120deg,#f5c51b,#fff0a3 50%,#df9200)}
+.sangeet{background:radial-gradient(circle at 50% 45%,#d7a85a33,transparent 42%),linear-gradient(120deg,#4a0d2b,#8c3156 48%,#210817)}
+.wedding{background:radial-gradient(circle at 50% 50%,#fff 0,#f8e9c9 34%,transparent 62%),linear-gradient(120deg,#8f1836,#f4e4c3 45%,#b57a28)}
+.reception{background:radial-gradient(circle at 50% 45%,#c79a4544,transparent 45%),linear-gradient(120deg,#3d0a1d,#8c1f3d 48%,#16050b)}
