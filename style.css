@@ -140,3 +140,40 @@ footer{background:#0c0307}
   .hero .small{font-size:20px}
   .hero-arch{left:-25%;width:90%;height:55%;top:18%}
 }
+
+/* FINAL ROYAL CLEANUP — overrides previous experimental layers */
+body{background:#12070b;color:#eadfd5}
+.hero{min-height:100svh;background:radial-gradient(circle at 50% 38%,#651a34 0%,#3b0b20 42%,#10050a 100%)}
+.hero:before{inset:18px;border:1px solid #d8b76a66;box-shadow:inset 0 0 90px #0008}
+.hero:after{inset:31px;border:1px solid #ffffff12}
+.hero-inner{max-width:700px;padding:110px 30px 90px;margin:auto;text-align:center}
+.hero .small{font-size:21px;color:#f1e3d5}
+.hero h1{font-size:clamp(72px,12vw,142px);margin:22px 0 16px;color:#fff9ef}
+.hero-welcome{max-width:520px;color:#ead8c8}
+.hero-preview{right:5%;bottom:7%;width:min(270px,23vw)}
+.preview-frame{padding:7px}
+.preview-caption{color:#e0c77f}
+.hero-arch{opacity:.45}
+.section{background:#f4ecdf;color:#3a2a2e}
+.story,.gallery,.events{background:#f4ecdf}
+.story h2,.events>h2,.gallery h2{color:#461126}
+.lead{color:#76656a}
+.timeline-item{background:#fbf6ed;border-color:#d2b77d}
+.count{background:#e8d7c1}
+.tradition-strip{background:linear-gradient(90deg,#300817,#641630 50%,#21050f);border-color:#b99650}
+.event{color:#fff;box-shadow:0 20px 55px #16050b33}
+.haldi{background:linear-gradient(125deg,#c98a00,#f0bd18 50%,#b96d00)}
+.sangeet{background:linear-gradient(125deg,#24102f,#5b1b52 48%,#1a0a22)}
+.wedding{background:linear-gradient(125deg,#4e0817,#8d1830 48%,#3a0611)}
+.reception{background:linear-gradient(125deg,#02050b,#0b1730 50%,#010207)}
+.sangeet,.wedding,.reception{color:#fff}
+.sangeet h3,.wedding h3,.reception h3,.sangeet .tag,.wedding .tag,.reception .tag,.sangeet .facts b,.wedding .facts b,.reception .facts b{color:#fff!important}
+.sangeet .facts span,.wedding .facts span,.reception .facts span,.sangeet .note,.wedding .note,.reception .note{color:#ead9d9}
+.sangeet .symbol,.wedding .symbol,.reception .symbol,.sangeet>strong,.wedding>strong,.reception>strong{color:#e2c373}
+.wedding .map,.reception .map,.sangeet .map{border-color:#e2c373;color:#f7e5bd}
+.family{background:linear-gradient(135deg,#230612,#4c1026);color:#fff}
+.rsvp{background:linear-gradient(135deg,#10040a,#300817 52%,#0b0307);color:#fff}
+footer{background:#070204}
+.rsvp-form{display:none}
+@media(max-width:1050px){.hero-preview{width:220px;right:3%}.hero-inner{padding-right:90px}}
+@media(max-width:720px){.hero-inner{padding:88px 22px 155px}.hero-preview{width:185px;right:50%;bottom:18px;transform:translateX(50%) rotate(1.5deg)}.hero-welcome{font-size:17px}.hero h1{font-size:78px}.hero-arch{opacity:.25}}
