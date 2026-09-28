@@ -42,8 +42,37 @@
 @keyframes particleTwinkle{from{opacity:.25}to{opacity:.6}}
 @media(prefers-reduced-motion:reduce){.hero-inner{transform:none!important}.event.reveal{opacity:1!important;transform:none!important}}
 
-/* Refined celebration palettes — distinct moods, one Maharashtrian luxury family */
-.haldi{background:radial-gradient(circle at 50% 50%,#fff8bf66,transparent 45%),linear-gradient(120deg,#f3bf18,#ffe98a 52%,#d98b00)}
-.sangeet{background:radial-gradient(circle at 18% 20%,#e3b06a33,transparent 28%),radial-gradient(circle at 82% 78%,#b96a8a33,transparent 30%),linear-gradient(120deg,#321022,#5b2442 48%,#24101d)}
-.wedding{background:radial-gradient(circle at 52% 48%,#fffaf0cc 0,#efe0c2 38%,transparent 68%),linear-gradient(120deg,#641b2c,#b58b52 48%,#6b2430)}
-.reception{background:radial-gradient(circle at 78% 22%,#d2a64a2b,transparent 25%),radial-gradient(circle at 20% 80%,#a33d5822,transparent 28%),linear-gradient(120deg,#260914,#541427 48%,#17060d)}
+/* Final celebration palettes — deliberately distinct visual identities */
+.haldi{
+  background:
+    radial-gradient(circle at 50% 45%,rgba(255,250,190,.42),transparent 42%),
+    linear-gradient(120deg,#e7a900 0%,#f4c72e 48%,#c77b00 100%);
+}
+
+/* Sangeet: jewel-plum / midnight violet — energetic and glamorous */
+.sangeet{
+  background:
+    radial-gradient(circle at 22% 18%,rgba(197,111,177,.28),transparent 27%),
+    radial-gradient(circle at 82% 82%,rgba(92,133,190,.16),transparent 30%),
+    linear-gradient(125deg,#170d2b 0%,#3a1854 48%,#24102f 100%);
+}
+
+/* Wedding: warm parchment / champagne — intentionally soft, matte, and calm */
+.wedding{
+  background:
+    radial-gradient(circle at 52% 42%,rgba(255,247,226,.72),transparent 45%),
+    linear-gradient(125deg,#cdbb9d 0%,#e0d0b5 48%,#bda982 100%);
+  color:#351d25;
+}
+.wedding h3,.wedding .tag,.wedding .facts b{color:#351d25!important}
+.wedding .facts span,.wedding .note{color:#5f4a43!important}
+.wedding .map{border-color:#8f6d43!important;color:#5f452b!important}
+.wedding .map:hover{background:#8f6d43!important;color:#fff!important}
+
+/* Reception: blackened wine / burgundy — formal and visibly darker than Sangeet */
+.reception{
+  background:
+    radial-gradient(circle at 78% 18%,rgba(198,151,65,.16),transparent 24%),
+    radial-gradient(circle at 18% 82%,rgba(130,34,67,.18),transparent 30%),
+    linear-gradient(125deg,#10070d 0%,#32101f 46%,#180810 100%);
+}
