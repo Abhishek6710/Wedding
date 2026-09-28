@@ -762,3 +762,82 @@ footer{background:#070204}
 .hero-welcome{color:#fff1d6;text-shadow:0 2px 15px rgba(20,3,8,.9)}
 .hero-ganesh{color:#e8c978}
 .hero-ganesh-divider{color:#dfc27a}
+
+
+/* Final hero readability + traditional Ganpati card divider */
+.hero .date,
+.hero .place,
+.hero .down{
+  position:relative;
+  z-index:2;
+}
+.hero .date{
+  display:inline-block;
+  margin-top:18px;
+  padding:7px 18px 5px;
+  color:#fff3dc;
+  font-weight:600;
+  letter-spacing:2.4px;
+  text-shadow:0 2px 10px rgba(0,0,0,.95);
+  background:rgba(38,8,17,.34);
+  border-top:1px solid rgba(226,189,103,.38);
+  border-bottom:1px solid rgba(226,189,103,.28);
+}
+.hero .place{
+  margin-top:8px;
+  color:#f0d9ae;
+  font-weight:600;
+  letter-spacing:2px;
+  text-shadow:0 2px 10px rgba(0,0,0,.95);
+}
+.hero .down{
+  display:inline-block;
+  margin-top:22px;
+  padding:10px 18px;
+  color:#fff1d2;
+  border:1px solid rgba(226,189,103,.52);
+  background:rgba(35,7,15,.28);
+  text-shadow:0 2px 9px rgba(0,0,0,.95);
+  transition:transform .25s ease,background .25s ease;
+}
+.hero .down:hover{
+  transform:translateY(-2px);
+  background:rgba(35,7,15,.46);
+}
+.hero-ganesh-divider{
+  min-height:42px;
+  gap:12px;
+  margin:17px auto 0;
+  color:#e5c579;
+  text-shadow:0 2px 10px rgba(0,0,0,.8);
+}
+.hero-ganesh-divider svg{
+  width:39px;
+  height:39px;
+  filter:drop-shadow(0 2px 8px rgba(0,0,0,.75));
+}
+.hero-ganesh-divider .ganesh-mantra{
+  font-family:"Noto Serif Devanagari","Noto Sans Devanagari","Mangal",serif;
+  font-size:12px;
+  letter-spacing:1.2px;
+  color:#e8cf91;
+  white-space:nowrap;
+}
+.hero-ganesh-divider:before,
+.hero-ganesh-divider:after{
+  width:62px;
+  box-shadow:0 0 5px rgba(226,189,103,.12);
+}
+@media(max-width:720px){
+  .hero .date{
+    padding:6px 12px 4px;
+    letter-spacing:1.7px;
+    font-size:17px;
+  }
+  .hero .place{font-size:9px;letter-spacing:1.5px}
+  .hero .down{margin-top:18px;padding:9px 15px}
+  .hero-ganesh-divider{gap:7px}
+  .hero-ganesh-divider svg{width:31px;height:31px}
+  .hero-ganesh-divider .ganesh-mantra{font-size:9px;letter-spacing:.7px}
+  .hero-ganesh-divider:before,.hero-ganesh-divider:after{width:25px}
+}
