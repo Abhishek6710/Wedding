@@ -9,3 +9,35 @@
 @keyframes heroRise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}@keyframes fadeUp{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}@keyframes heroTitle{from{opacity:0;transform:scale(.92);filter:blur(5px)}to{opacity:1;transform:scale(1);filter:none}}@keyframes rangoliSpin{to{transform:translate(-50%,-50%) rotate(360deg)}}@keyframes rangoliPulse{50%{transform:scale(1.12);opacity:.65}}@keyframes particleDrift{to{background-position:10px 115px,55px -30px}}
 @media(max-width:720px){.rangoli{width:95vw;height:95vw;font-size:20px}.rangoli span{font-size:65px}.tradition-strip{padding:30px 15px}.tradition-strip p{font-size:13px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+
+/* Refined editorial event cards — remove the boxed-line look */
+.event{border:0;border-radius:2px;box-shadow:0 22px 60px rgba(55,17,28,.13);transition:transform .7s cubic-bezier(.2,.8,.2,1),box-shadow .7s ease;will-change:transform}
+.event:before,.event:after{display:none}
+.event:hover{transform:translateY(-8px);box-shadow:0 32px 75px rgba(55,17,28,.20)}
+.event .symbol{transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.event:hover .symbol{transform:scale(1.12) rotate(-5deg)}
+.event>strong{opacity:.72}
+.event.reveal{opacity:0;transform:translateY(55px) scale(.98)}
+.event.reveal.is-visible{opacity:1;transform:none}
+.event.reveal:nth-of-type(2){transition-delay:.05s}.event.reveal:nth-of-type(3){transition-delay:.12s}.event.reveal:nth-of-type(4){transition-delay:.18s}.event.reveal:nth-of-type(5){transition-delay:.24s}
+
+/* A more obvious cinematic entrance */
+.hero:after{animation:frameGlow 4s ease-in-out infinite}
+.hero-inner{transform:translate3d(var(--mx,0),var(--my,0),0);transition:transform .25s ease-out}
+.hero .down{position:relative;animation:fadeUp .8s 1.15s both,pulseDown 2.4s 2s ease-in-out infinite}
+.down:after{content:"";position:absolute;left:50%;bottom:-14px;width:1px;height:32px;background:linear-gradient(#d7b366,transparent);transform:translateX(-50%);animation:lineDrop 1.8s ease-in-out infinite}
+.hero-particles{animation:particleDrift 14s linear infinite,particleTwinkle 3s ease-in-out infinite alternate}
+.rangoli{animation:rangoliSpin 28s linear infinite,rangoliAppear 1.8s .2s both}
+
+/* Soft Maharashtrian-inspired corner flourishes instead of inner lines */
+.event{background-image:radial-gradient(circle at 92% 10%,rgba(255,255,255,.22) 0 2px,transparent 3px),radial-gradient(circle at 8% 90%,rgba(255,255,255,.18) 0 2px,transparent 3px),var(--event-bg,linear-gradient(120deg,#fff,#ead))}
+
+/* Scroll reveal for the rest of the page */
+.section,.count,.tradition-strip,.family,.rsvp{animation:sectionFade .9s both}
+@keyframes sectionFade{from{opacity:.01}to{opacity:1}}
+@keyframes frameGlow{50%{opacity:.75}}
+@keyframes pulseDown{50%{transform:translateY(4px);opacity:1}}
+@keyframes lineDrop{50%{height:45px;opacity:.35}}
+@keyframes rangoliAppear{from{opacity:0;transform:translate(-50%,-50%) scale(.72) rotate(-25deg)}to{opacity:1;transform:translate(-50%,-50%) scale(1) rotate(0)}}
+@keyframes particleTwinkle{from{opacity:.25}to{opacity:.6}}
+@media(prefers-reduced-motion:reduce){.hero-inner{transform:none!important}.event.reveal{opacity:1!important;transform:none!important}}
