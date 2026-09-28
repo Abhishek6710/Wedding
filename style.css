@@ -841,3 +841,12 @@ footer{background:#070204}
   .hero-ganesh-divider .ganesh-mantra{font-size:9px;letter-spacing:.7px}
   .hero-ganesh-divider:before,.hero-ganesh-divider:after{width:25px}
 }
+
+
+/* Ganeshji visibility refinement */
+.hero-ganesh{width:94px;height:94px;color:#e8c978;opacity:.98;filter:drop-shadow(0 3px 10px rgba(0,0,0,.58));}
+.hero-ganesh-divider{gap:15px;min-height:52px;margin:20px auto 0;color:#e8c978;opacity:.98;}
+.hero-ganesh-divider svg{width:48px;height:48px;filter:drop-shadow(0 3px 9px rgba(0,0,0,.62));}
+.hero-ganesh-divider .ganesh-mantra{font-size:14px;letter-spacing:1.5px;color:#f0d9ae;text-shadow:0 2px 8px rgba(0,0,0,.9);}
+.hero-ganesh-divider:before,.hero-ganesh-divider:after{width:76px;}
+@media(max-width:720px){.hero-ganesh{width:78px;height:78px}.hero-ganesh-divider{gap:8px;margin-top:16px}.hero-ganesh-divider svg{width:38px;height:38px}.hero-ganesh-divider .ganesh-mantra{font-size:10px;letter-spacing:.8px}.hero-ganesh-divider:before,.hero-ganesh-divider:after{width:30px}}
