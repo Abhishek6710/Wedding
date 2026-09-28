@@ -748,3 +748,17 @@ footer{background:#070204}
   .hero-ganesh-divider:before,.hero-ganesh-divider:after{width:42px}
   .hero-ganesh-divider svg{width:26px;height:26px}
 }
+
+
+/* Readability refinement — champagne gold hierarchy */
+.hero .eyebrow,
+.hero .gold,
+.hero .date,
+.hero .place,
+.hero .down{color:#e8cf91;text-shadow:0 2px 14px rgba(20,3,8,.88)}
+.hero h1{color:#f0cf79;text-shadow:0 4px 24px rgba(0,0,0,.68)}
+.hero h1 i{color:#f0d58d}
+.hero .small,
+.hero-welcome{color:#fff1d6;text-shadow:0 2px 15px rgba(20,3,8,.9)}
+.hero-ganesh{color:#e8c978}
+.hero-ganesh-divider{color:#dfc27a}
