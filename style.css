@@ -1183,53 +1183,195 @@ footer{background:#230610;border-top:1px solid rgba(199,154,69,.3)}footer small{
 
 /* ---------- Mobile ceremony card correction ---------- */
 @media(max-width:720px){
+  /*
+    Phone cards are one continuous canvas.
+    The ceremony artwork remains the decorative upper portion,
+    but its base colour continues through the full card so there
+    is no separate cream/purple panel fighting with the artwork.
+  */
   .event{
-    grid-template-columns:1fr;
-    gap:0;
+    display:block;
+    width:100%;
+    max-width:560px;
     min-height:0;
-    padding:210px 22px 32px;
+    margin:30px auto 0;
+    padding:154px 22px 30px;
     background-position:center top;
-    background-size:100% 185px;
+    background-size:100% 140px;
     background-repeat:no-repeat;
+    overflow:hidden;
   }
+
+  .event:before{
+    inset:8px;
+    z-index:1;
+  }
+
   .event>strong{
     position:absolute;
-    top:25px;
-    left:27px;
-    z-index:5;
+    top:20px;
+    left:25px;
+    z-index:4;
     padding:0;
-    font-size:31px;
+    font-size:27px;
+    line-height:1;
   }
+
   .event .symbol{
     position:absolute;
-    top:23px;
-    right:27px;
-    z-index:5;
-    font-size:40px;
+    top:17px;
+    right:24px;
+    z-index:4;
+    font-size:37px;
+    line-height:1;
     text-align:right;
   }
-  .event>div:last-child{grid-column:auto}
-  .event small{font-size:8px;letter-spacing:1.7px}
-  .event h3{font-size:48px;margin-top:7px}
-  .event .tag{font-size:20px}
-  .event .facts{gap:17px 24px;margin:20px 0}
-  .event .facts span{min-width:96px}
-  .event .note{font-size:12px;line-height:1.45}
-  .event .map{margin-top:2px}
-  .haldi{background-color:#f8e8c8}
-  .sangeet{background-color:#281034}
-  .wedding{background-color:#4b071a}
-  .reception{background-color:#081323}
+
+  .event>div:last-child{
+    position:relative;
+    z-index:4;
+    width:100%;
+  }
+
+  .event small{
+    display:block;
+    max-width:100%;
+    font-size:7.5px;
+    line-height:1.4;
+    letter-spacing:1.35px;
+    white-space:normal;
+  }
+
+  .event h3{
+    margin-top:5px;
+    font-size:46px;
+    line-height:.95;
+  }
+
+  .event .tag{
+    margin-top:7px;
+    font-size:19px;
+    line-height:1.12;
+  }
+
+  .event .facts{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:14px 18px;
+    margin:20px 0 18px;
+  }
+
+  .event .facts span{
+    min-width:0;
+    font-size:8px;
+    line-height:1.25;
+    letter-spacing:1px;
+  }
+
+  .event .facts span:last-child{grid-column:1 / -1}
+
+  .event .facts b{
+    display:block;
+    margin-bottom:3px;
+    font-size:12px;
+    line-height:1.2;
+    letter-spacing:0;
+    overflow-wrap:anywhere;
+  }
+
+  .event .note{
+    margin-top:18px;
+    max-width:none;
+    font-size:12px;
+    line-height:1.45;
+  }
+
+  .event .map{
+    margin-top:2px;
+    padding:9px 13px;
+    font-size:8px;
+    letter-spacing:1.35px;
+  }
+
+  /* Continue each artwork's own colour below its illustration. */
+  .haldi{background-color:#e9a50d!important}
+  .sangeet{background-color:#281034!important}
+  .wedding{background-color:#4b071a!important}
+  .reception{background-color:#081323!important}
+
   .sangeet h3,.sangeet .tag,.sangeet .facts b,.sangeet .facts span,.sangeet .note,
   .wedding h3,.wedding .tag,.wedding .facts b,.wedding .facts span,
   .reception h3,.reception .tag,.reception .facts b,.reception .facts span{
-    text-shadow:0 2px 10px rgba(0,0,0,.42);
+    text-shadow:0 2px 10px rgba(0,0,0,.5);
   }
+
+  /* Calendar is a compact phone section with no awkward heading wrap. */
+  .save-dates{
+    padding:58px 18px 50px;
+    overflow:hidden;
+  }
+  .save-dates-inner{
+    display:block;
+    width:100%;
+    max-width:560px;
+  }
+  .save-dates-copy{text-align:center}
+  .save-dates h2{
+    margin:7px auto 0;
+    max-width:100%;
+    font-size:clamp(40px,11.5vw,52px);
+    line-height:.92;
+    letter-spacing:0;
+  }
+  .save-dates h2 em{white-space:nowrap}
+  .save-dates-copy>p:not(.kicker){
+    max-width:330px;
+    margin:16px auto 0;
+    font-size:16px;
+    line-height:1.42;
+  }
+  .calendar-actions{
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:9px;
+    margin:20px auto 0;
+  }
+  .calendar-button{
+    width:100%;
+    min-height:42px;
+    justify-content:center;
+    padding:10px 12px;
+    font-size:8.5px;
+    letter-spacing:1.1px;
+  }
+  .calendar-card{
+    width:138px;
+    height:138px;
+    margin:25px auto 0;
+  }
+  .calendar-card b{font-size:35px;line-height:.9}
+  .calendar-card small{font-size:7px;letter-spacing:1.6px}
+  .calendar-card i{font-size:6.5px;letter-spacing:1px}
+
+  .family .section{padding-top:72px;padding-bottom:72px}
+  .family-grid{margin-top:34px}
+  .family-grid>div{padding:32px 22px}
+  .family-grid h3{font-size:31px}
+  .rsvp{padding:76px 18px}
+  .rsvp h2{font-size:clamp(48px,13vw,64px);line-height:.92}
 }
+
 @media(max-width:390px){
-  .event{padding:200px 18px 30px}
-  .event h3{font-size:44px}
-  .event .tag{font-size:19px}
-  .event>strong{left:23px}
-  .event .symbol{right:23px}
+  .event{
+    padding:150px 18px 27px;
+    margin-top:26px;
+  }
+  .event>strong{left:21px;top:19px;font-size:25px}
+  .event .symbol{right:20px;top:16px;font-size:34px}
+  .event h3{font-size:42px}
+  .event .tag{font-size:18px}
+  .event .facts{gap:13px 14px}
+  .event .facts b{font-size:11px}
+  .save-dates h2{font-size:clamp(38px,11.5vw,49px)}
 }
