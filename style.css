@@ -731,3 +731,20 @@ footer{background:#070204}
       url("images/opening-mandap (1).webp") center/cover no-repeat;
   }
 }
+
+
+/* Subtle wedding-card gold typography + Ganpati divider */
+.hero .eyebrow,.hero .gold,.hero .place,.hero .date,.hero .down{color:#e2bd67;text-shadow:0 2px 18px rgba(20,3,8,.72)}
+.hero .small,.hero-welcome{color:#f2dfbc;text-shadow:0 2px 16px rgba(20,3,8,.78)}
+.hero h1{color:#f3d27a;text-shadow:0 5px 28px rgba(0,0,0,.58)}
+.hero h1 i{color:#f0cb67}
+.hero-ganesh-divider{display:flex;align-items:center;justify-content:center;gap:13px;margin:18px auto 0;color:#d7b366;opacity:.88}
+.hero-ganesh-divider:before,.hero-ganesh-divider:after{content:"";width:72px;height:1px;background:linear-gradient(90deg,transparent,rgba(215,179,102,.72))}
+.hero-ganesh-divider:after{background:linear-gradient(90deg,rgba(215,179,102,.72),transparent)}
+.hero-ganesh-divider svg{width:31px;height:31px;filter:drop-shadow(0 2px 7px rgba(0,0,0,.35))}
+.hero-ganesh-divider span{font-size:13px;line-height:1}
+@media(max-width:720px){
+  .hero-ganesh-divider{gap:8px;margin-top:14px}
+  .hero-ganesh-divider:before,.hero-ganesh-divider:after{width:42px}
+  .hero-ganesh-divider svg{width:26px;height:26px}
+}
