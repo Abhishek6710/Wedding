@@ -963,3 +963,63 @@ footer{background:#070204}
   text-shadow:0 3px 18px rgba(0,0,0,.65);
 }
 .rsvp-intro{color:#eadbd4!important}
+
+/* Final event artwork refinement — richer wedding-card identities */
+.haldi{
+  background-image:
+    linear-gradient(rgba(255,214,53,.08),rgba(216,132,0,.08)),
+    url("images/haldi-ceremony.svg");
+  background-size:cover,cover;
+  background-position:center;
+  color:#35140f;
+}
+.haldi h3,.haldi .tag,.haldi .facts b{color:#6d1730!important}
+.haldi .facts span,.haldi .note{color:#5e4638!important}
+.haldi .symbol,.haldi>strong{color:#8f4f0b!important}
+.haldi .map{border-color:#7a2a2d!important;color:#6d1730!important}
+.haldi .map:hover{background:#6d1730!important;color:#fff4d7!important}
+
+.sangeet{
+  background-image:
+    linear-gradient(rgba(8,2,14,.06),rgba(8,2,14,.06)),
+    url("images/sangeet-ceremony.svg");
+  background-size:cover,cover;
+  background-position:center;
+  color:#fff3dc;
+}
+.sangeet h3,.sangeet .tag,.sangeet .facts b{color:#fff4dc!important;text-shadow:0 2px 12px rgba(0,0,0,.65)}
+.sangeet .facts span,.sangeet .note{color:#ead8d6!important;text-shadow:0 2px 10px rgba(0,0,0,.55)}
+.sangeet .symbol,.sangeet>strong{color:#efca72!important;text-shadow:0 2px 10px rgba(0,0,0,.65)}
+
+.wedding{
+  background-image:
+    linear-gradient(rgba(54,3,15,.05),rgba(54,3,15,.05)),
+    url("images/wedding-ceremony.svg");
+  background-size:cover,cover;
+  background-position:center;
+  color:#fff5e3;
+}
+.wedding h3,.wedding .tag,.wedding .facts b{color:#fff4df!important;text-shadow:0 2px 12px rgba(0,0,0,.62)}
+.wedding .facts span,.wedding .note{color:#f0ddd2!important;text-shadow:0 2px 10px rgba(0,0,0,.5)}
+.wedding .symbol,.wedding>strong{color:#f0ca72!important;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+
+.reception{
+  background-image:
+    linear-gradient(rgba(1,5,11,.10),rgba(1,5,11,.10)),
+    url("images/reception-ceremony.svg");
+  background-size:cover,cover;
+  background-position:center;
+  color:#fff5e1;
+}
+.reception h3,.reception .tag,.reception .facts b{color:#fff5e1!important;text-shadow:0 2px 12px rgba(0,0,0,.7)}
+.reception .facts span,.reception .note{color:#e4d9d1!important;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+.reception .symbol,.reception>strong{color:#f0ca72!important;text-shadow:0 2px 10px rgba(0,0,0,.7)}
+
+.hero .eyebrow{
+  color:#f0cf7a!important;
+  background:rgba(34,5,13,.72);
+  border:1px solid rgba(232,197,111,.55);
+  box-shadow:0 8px 28px rgba(0,0,0,.22);
+  text-shadow:0 2px 9px rgba(0,0,0,.95);
+  padding:8px 16px 7px;
+}

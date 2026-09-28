@@ -1,1 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520"><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#06101b"/><stop offset=".5" stop-color="#10253a"/><stop offset="1" stop-color="#170610"/></linearGradient><radialGradient id="glow"><stop stop-color="#f3d17b" stop-opacity=".8"/><stop offset="1" stop-color="#f3d17b" stop-opacity="0"/></radialGradient></defs><rect width="1200" height="520" rx="12" fill="url(#bg)"/><g stroke="#dcb96c" stroke-width="3" fill="none"><path d="M40 0v100M160 0v70M1040 0v70M1160 0v100"/><path d="M40 105q18 20 36 0t36 0t36 0M1040 75q18 20 36 0t36 0t36 0"/></g><g fill="#dcb96c"><circle cx="40" cy="105" r="8"/><circle cx="160" cy="75" r="7"/><circle cx="1040" cy="75" r="7"/><circle cx="1160" cy="105" r="8"/></g><g fill="url(#glow)"><circle cx="40" cy="105" r="55"/><circle cx="160" cy="75" r="45"/><circle cx="1040" cy="75" r="45"/><circle cx="1160" cy="105" r="55"/></g><g fill="none" stroke="#dcb96c" stroke-width="5"><path d="M55 205q45-55 90 0v42H55zM1055 205q45-55 90 0v42h-90z"/></g><g fill="#dcb96c"><path d="M0 470q70-75 140 0t140 0t140 0M1200 470q-70-75-140 0t-140 0t-140 0" fill="none" stroke="#dcb96c" stroke-width="4"/></g><g fill="#f1d18a"><circle cx="310" cy="430" r="3"/><circle cx="340" cy="455" r="4"/><circle cx="860" cy="440" r="4"/><circle cx="900" cy="415" r="3"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520">
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#02060d"/><stop offset=".48" stop-color="#0c1b30"/><stop offset="1" stop-color="#12060e"/></linearGradient>
+ <linearGradient id="gold"><stop stop-color="#fff0ae"/><stop offset=".55" stop-color="#d8b35d"/><stop offset="1" stop-color="#8c6428"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#f2d17b" stop-opacity=".30"/><stop offset="1" stop-color="#f2d17b" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="520" rx="14" fill="url(#bg)"/>
+<circle cx="600" cy="240" r="250" fill="url(#glow)"/>
+<!-- hanging lanterns -->
+<g stroke="#dcb96c" stroke-width="4" fill="none">
+ <path d="M55 0v82M175 0v125M1025 0v125M1145 0v82"/>
+ <path d="M35 82h40l-7 55H42zM155 125h40l-7 55h-26zM1005 125h40l-7 55h-26zM1125 82h40l-7 55h-26z"/>
+ <path d="M45 137h30M165 180h20M1015 180h20M1135 137h30"/>
+</g>
+<g fill="#f2d17b" opacity=".32"><circle cx="55" cy="108" r="34"/><circle cx="175" cy="150" r="42"/><circle cx="1025" cy="150" r="42"/><circle cx="1145" cy="108" r="34"/></g>
+<!-- floral gold sprays -->
+<g fill="none" stroke="#dcb96c" stroke-width="4" opacity=".78">
+ <path d="M35 330q75-75 145 0q-35 42-70 0q-35 42-75 0z"/>
+ <path d="M1165 330q-75-75-145 0q35 42 70 0q35 42 75 0z"/>
+ <path d="M210 455q45-65 90 0M990 455q-45-65-90 0"/>
+</g>
+<g fill="#e5c575"><circle cx="70" cy="330" r="7"/><circle cx="130" cy="330" r="7"/><circle cx="1070" cy="330" r="7"/><circle cx="1130" cy="330" r="7"/></g>
+<!-- elegant central medallion -->
+<circle cx="600" cy="250" r="116" fill="none" stroke="#dcb96c" stroke-width="3" opacity=".38"/>
+<circle cx="600" cy="250" r="94" fill="none" stroke="#dcb96c" stroke-width="2" stroke-dasharray="4 10" opacity=".55"/>
+<path d="M600 162q18 35 0 70q-18-35 0-70M600 268q18 35 0 70q-18-35 0-70M512 250q35-18 70 0q-35 18-70 0M618 250q35-18 70 0q-35 18-70 0" fill="none" stroke="url(#gold)" stroke-width="4" opacity=".7"/>
+<g fill="#f1d18a"><circle cx="600" cy="250" r="7"/><circle cx="600" cy="140" r="4"/><circle cx="600" cy="360" r="4"/></g>
+<!-- bottom art-deco line -->
+<path d="M260 480h680M330 462h540" stroke="#dcb96c" stroke-width="3" opacity=".65"/>
+</svg>

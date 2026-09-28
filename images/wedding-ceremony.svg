@@ -1,1 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520"><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#4b0716"/><stop offset=".48" stop-color="#8b1830"/><stop offset="1" stop-color="#3b0611"/></linearGradient><linearGradient id="gold"><stop stop-color="#fff0b1"/><stop offset="1" stop-color="#c8953e"/></linearGradient></defs><rect width="1200" height="520" rx="12" fill="url(#bg)"/><path d="M0 72h1200" stroke="#e6c16c" stroke-width="3" opacity=".55"/><g fill="none" stroke="url(#gold)" stroke-width="5"><path d="M65 0v72M1135 0v72"/><path d="M20 90q45-42 90 0q45-42 90 0M1010 90q45-42 90 0q45-42 90 0"/></g><g fill="#e7c36e"><circle cx="65" cy="82" r="8"/><circle cx="1135" cy="82" r="8"/></g><g transform="translate(455 75)" fill="none" stroke="#e8c873" stroke-width="7"><path d="M0 160V40h290v120M-25 160h340M15 40Q145-20 275 40"/><path d="M55 160V85h180v75"/></g><g transform="translate(535 295)"><path d="M65 80V0M35 22q30-25 60 0M5 82h120" stroke="#f0ce78" stroke-width="5" fill="none"/><path d="M25 82q40 55 80 0" stroke="#dcae4f" stroke-width="10" fill="none"/></g><g fill="#e8c873"><path d="M70 390q22-32 44 0v42H70zM1086 390q22-32 44 0v42h-44z"/><circle cx="92" cy="387" r="9"/><circle cx="1108" cy="387" r="9"/></g><path d="M0 475Q150 430 300 475T600 475T900 475T1200 475" fill="none" stroke="#e7c36e" stroke-width="3" opacity=".55"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520">
+<defs>
+ <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#430714"/><stop offset=".5" stop-color="#78152a"/><stop offset="1" stop-color="#33050f"/></linearGradient>
+ <linearGradient id="gold"><stop stop-color="#fff1b1"/><stop offset=".5" stop-color="#e1b65d"/><stop offset="1" stop-color="#9b6829"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#f0cf78" stop-opacity=".20"/><stop offset="1" stop-color="#f0cf78" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="520" rx="14" fill="url(#bg)"/>
+<circle cx="600" cy="250" r="245" fill="url(#glow)"/>
+<!-- gold toran -->
+<path d="M0 58q75 55 150 0t150 0t150 0t150 0t150 0t150 0t150 0t150 0" fill="none" stroke="#e2bd67" stroke-width="4"/>
+<g fill="#e2bd67"><circle cx="75" cy="76" r="7"/><circle cx="225" cy="76" r="7"/><circle cx="975" cy="76" r="7"/><circle cx="1125" cy="76" r="7"/></g>
+<!-- central mandap arch -->
+<g fill="none" stroke="url(#gold)" stroke-width="7" opacity=".62">
+ <path d="M335 420V170 Q600 20 865 170V420"/>
+ <path d="M380 420V190 Q600 62 820 190V420"/>
+ <path d="M425 420V215 Q600 105 775 215V420"/>
+ <path d="M470 420V240 Q600 145 730 240V420"/>
+</g>
+<g fill="#e6c16d" opacity=".72">
+ <circle cx="335" cy="175" r="9"/><circle cx="865" cy="175" r="9"/><circle cx="380" cy="193" r="7"/><circle cx="820" cy="193" r="7"/>
+</g>
+<!-- diyas -->
+<g fill="#e7bd65" stroke="#8f5d25" stroke-width="4">
+ <path d="M95 390q35-42 70 0q-10 32-35 32t-35-32z"/><path d="M1035 390q35-42 70 0q-10 32-35 32t-35-32z"/>
+</g>
+<g stroke="#ffe7a0" stroke-width="4" stroke-linecap="round"><path d="M130 378l0-28M1070 378l0-28"/></g>
+<!-- kalash -->
+<g fill="none" stroke="#e7c36e" stroke-width="4">
+ <path d="M45 260q30-28 60 0v65q-30 24-60 0zM1095 260q30-28 60 0v65q-30 24-60 0z"/>
+ <path d="M55 260q20-32 40 0M1105 260q20-32 40 0M75 230v28M1125 230v28"/>
+ <path d="M60 238l-16-18M90 238l16-18M1110 238l-16-18M1140 238l16-18"/>
+</g>
+<!-- lotus base -->
+<path d="M250 470q35-48 70 0q35-48 70 0q35-48 70 0q35-48 70 0q35-48 70 0q35-48 70 0q35-48 70 0q35-48 70 0q35-48 70 0" fill="none" stroke="#e5c16d" stroke-width="4" opacity=".75"/>
+</svg>
