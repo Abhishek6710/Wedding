@@ -42,8 +42,8 @@
 @keyframes particleTwinkle{from{opacity:.25}to{opacity:.6}}
 @media(prefers-reduced-motion:reduce){.hero-inner{transform:none!important}.event.reveal{opacity:1!important;transform:none!important}}
 
-/* Preserve each celebration's rich background after the borderless redesign */
-.haldi{background:radial-gradient(circle at 50% 50%,#fff7b855,transparent 45%),linear-gradient(120deg,#f5c51b,#fff0a3 50%,#df9200)}
-.sangeet{background:radial-gradient(circle at 50% 45%,#d7a85a33,transparent 42%),linear-gradient(120deg,#4a0d2b,#8c3156 48%,#210817)}
-.wedding{background:radial-gradient(circle at 50% 50%,#fff 0,#f8e9c9 34%,transparent 62%),linear-gradient(120deg,#8f1836,#f4e4c3 45%,#b57a28)}
-.reception{background:radial-gradient(circle at 50% 45%,#c79a4544,transparent 45%),linear-gradient(120deg,#3d0a1d,#8c1f3d 48%,#16050b)}
+/* Refined celebration palettes — distinct moods, one Maharashtrian luxury family */
+.haldi{background:radial-gradient(circle at 50% 50%,#fff8bf66,transparent 45%),linear-gradient(120deg,#f3bf18,#ffe98a 52%,#d98b00)}
+.sangeet{background:radial-gradient(circle at 18% 20%,#e3b06a33,transparent 28%),radial-gradient(circle at 82% 78%,#b96a8a33,transparent 30%),linear-gradient(120deg,#321022,#5b2442 48%,#24101d)}
+.wedding{background:radial-gradient(circle at 52% 48%,#fffaf0cc 0,#efe0c2 38%,transparent 68%),linear-gradient(120deg,#641b2c,#b58b52 48%,#6b2430)}
+.reception{background:radial-gradient(circle at 78% 22%,#d2a64a2b,transparent 25%),radial-gradient(circle at 20% 80%,#a33d5822,transparent 28%),linear-gradient(120deg,#260914,#541427 48%,#17060d)}
