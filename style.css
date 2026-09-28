@@ -716,3 +716,18 @@ footer{background:#070204}
   }
   .rangoli{opacity:.18}
 }
+
+
+/* Opening mandap artwork — final live hero */
+.hero{
+  background:
+    linear-gradient(180deg,rgba(24,4,10,.10) 0%,rgba(35,5,13,.18) 34%,rgba(25,4,10,.42) 100%),
+    url("images/opening-mandap (1).webp") center/cover no-repeat;
+}
+@media(max-width:720px){
+  .hero{
+    background:
+      linear-gradient(180deg,rgba(20,3,9,.18),rgba(35,5,13,.34) 46%,rgba(18,3,8,.70) 100%),
+      url("images/opening-mandap (1).webp") center/cover no-repeat;
+  }
+}
