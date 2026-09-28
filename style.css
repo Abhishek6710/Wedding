@@ -1106,3 +1106,130 @@ footer{background:#230610;border-top:1px solid rgba(199,154,69,.3)}footer small{
   .calendar-qr-wrap{min-height:280px}
   .calendar-seal{right:calc(50% - 155px);bottom:-8px}
 }
+
+/* ---------- Calendar invite near RSVP ---------- */
+.save-dates{
+  padding:76px 28px;
+  background:
+    radial-gradient(circle at 82% 18%,rgba(200,155,75,.13),transparent 28%),
+    linear-gradient(135deg,#f8eddb,#efe0ca 56%,#f8efe2);
+  border-block:1px solid #d9c4a2;
+}
+.save-dates-inner{
+  max-width:980px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 190px;
+  gap:48px;
+  align-items:center;
+}
+.save-dates-copy{text-align:left}
+.save-dates-copy .kicker{color:#936b31}
+.save-dates h2{
+  margin-top:7px;
+  font:500 clamp(46px,5vw,64px)/.95 "Cormorant Garamond",serif;
+  color:var(--maroon-ink);
+}
+.save-dates h2 em{color:#a47731}
+.save-dates-copy>p:not(.kicker){
+  max-width:620px;
+  margin-top:17px;
+  color:var(--muted);
+  font:400 18px/1.45 "Cormorant Garamond",serif;
+}
+.calendar-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:23px}
+.calendar-button{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 13px;
+  border:1px solid #b99659;
+  color:var(--maroon);
+  background:rgba(255,250,242,.7);
+  font:700 9px Manrope,sans-serif;
+  letter-spacing:1.2px;
+  text-transform:uppercase;
+}
+.calendar-button span{font-size:12px}
+.calendar-button.primary{color:#fff6e7;background:var(--maroon);border-color:var(--maroon)}
+.calendar-card{
+  width:170px;
+  height:170px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  text-align:center;
+  border:1px solid #c89b4b;
+  outline:1px solid rgba(200,155,75,.35);
+  outline-offset:-8px;
+  background:#fffaf1;
+  box-shadow:0 18px 38px rgba(69,30,35,.10);
+  color:var(--maroon);
+}
+.calendar-card span{font-size:14px;color:#b68a43}
+.calendar-card b{font:500 42px/.9 "Cormorant Garamond",serif}
+.calendar-card small{font:700 8px Manrope,sans-serif;letter-spacing:2px;color:#936b31}
+.calendar-card i{font:700 7px Manrope,sans-serif;letter-spacing:1.4px;font-style:normal;color:#9b7b52}
+@media(max-width:720px){
+  .save-dates{padding:64px 20px}
+  .save-dates-inner{grid-template-columns:1fr;gap:26px}
+  .save-dates-copy{text-align:center}
+  .save-dates-copy>p:not(.kicker){margin-left:auto;margin-right:auto;font-size:17px}
+  .calendar-actions{justify-content:center}
+  .calendar-card{width:145px;height:145px}
+  .calendar-card b{font-size:37px}
+}
+
+/* ---------- Mobile ceremony card correction ---------- */
+@media(max-width:720px){
+  .event{
+    grid-template-columns:1fr;
+    gap:0;
+    min-height:0;
+    padding:210px 22px 32px;
+    background-position:center top;
+    background-size:100% 185px;
+    background-repeat:no-repeat;
+  }
+  .event>strong{
+    position:absolute;
+    top:25px;
+    left:27px;
+    z-index:5;
+    padding:0;
+    font-size:31px;
+  }
+  .event .symbol{
+    position:absolute;
+    top:23px;
+    right:27px;
+    z-index:5;
+    font-size:40px;
+    text-align:right;
+  }
+  .event>div:last-child{grid-column:auto}
+  .event small{font-size:8px;letter-spacing:1.7px}
+  .event h3{font-size:48px;margin-top:7px}
+  .event .tag{font-size:20px}
+  .event .facts{gap:17px 24px;margin:20px 0}
+  .event .facts span{min-width:96px}
+  .event .note{font-size:12px;line-height:1.45}
+  .event .map{margin-top:2px}
+  .haldi{background-color:#f8e8c8}
+  .sangeet{background-color:#281034}
+  .wedding{background-color:#4b071a}
+  .reception{background-color:#081323}
+  .sangeet h3,.sangeet .tag,.sangeet .facts b,.sangeet .facts span,.sangeet .note,
+  .wedding h3,.wedding .tag,.wedding .facts b,.wedding .facts span,
+  .reception h3,.reception .tag,.reception .facts b,.reception .facts span{
+    text-shadow:0 2px 10px rgba(0,0,0,.42);
+  }
+}
+@media(max-width:390px){
+  .event{padding:200px 18px 30px}
+  .event h3{font-size:44px}
+  .event .tag{font-size:19px}
+  .event>strong{left:23px}
+  .event .symbol{right:23px}
+}
