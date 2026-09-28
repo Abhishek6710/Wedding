@@ -850,3 +850,9 @@ footer{background:#070204}
 .hero-ganesh-divider .ganesh-mantra{font-size:14px;letter-spacing:1.5px;color:#f0d9ae;text-shadow:0 2px 8px rgba(0,0,0,.9);}
 .hero-ganesh-divider:before,.hero-ganesh-divider:after{width:76px;}
 @media(max-width:720px){.hero-ganesh{width:78px;height:78px}.hero-ganesh-divider{gap:8px;margin-top:16px}.hero-ganesh-divider svg{width:38px;height:38px}.hero-ganesh-divider .ganesh-mantra{font-size:10px;letter-spacing:.8px}.hero-ganesh-divider:before,.hero-ganesh-divider:after{width:30px}}
+
+
+/* Refined subtle Ganeshji — minimalist wedding-card line art */
+.hero-ganesh{width:88px;height:88px;color:#e8c978;opacity:.96;filter:drop-shadow(0 3px 9px rgba(0,0,0,.58))}
+.hero-ganesh-divider svg{width:44px;height:44px;filter:drop-shadow(0 3px 8px rgba(0,0,0,.62))}
+@media(max-width:720px){.hero-ganesh{width:74px;height:74px}.hero-ganesh-divider svg{width:36px;height:36px}}
