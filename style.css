@@ -202,3 +202,83 @@ footer{background:#070204}
 @keyframes storySpark{0%,100%{opacity:.2;transform:translateY(8px) scale(.8)}50%{opacity:1;transform:translateY(-8px) scale(1.1)}}
 @keyframes storyOrbit{to{transform:translateY(-50%) rotate(360deg)}}
 @media(max-width:720px){.hero{background:linear-gradient(150deg,#07131d,#132d40 48%,#300b1e)}.story-cinema{height:110px}.story-orb{width:70px;height:70px}.story-ring{width:100px;height:100px}}
+
+/* Royal red & gold hero — preview artwork becomes part of the atmosphere */
+.hero{
+  min-height:100svh;
+  position:relative;
+  isolation:isolate;
+  background:
+    linear-gradient(90deg,rgba(24,3,9,.97) 0%,rgba(67,7,22,.82) 34%,rgba(68,8,22,.62) 60%,rgba(13,3,7,.92) 100%),
+    url("images/share-preview.jpg") center/cover no-repeat;
+  overflow:hidden;
+}
+.hero:before{
+  inset:0;
+  border:0;
+  background:
+    radial-gradient(circle at 76% 44%,rgba(226,188,91,.22),transparent 23%),
+    radial-gradient(circle at 20% 72%,rgba(116,12,39,.30),transparent 30%),
+    linear-gradient(180deg,rgba(10,2,6,.18),rgba(10,2,6,.48));
+  box-shadow:inset 0 0 150px rgba(0,0,0,.65);
+  z-index:-1;
+}
+.hero:after{
+  inset:20px;
+  border:1px solid rgba(226,195,115,.45);
+  box-shadow:inset 0 0 0 1px rgba(226,195,115,.08),0 0 45px rgba(226,195,115,.06);
+}
+.hero-preview{display:none}
+.hero-arch{
+  left:auto;right:-8%;top:8%;width:54%;height:82%;
+  border-color:rgba(225,191,102,.20);
+  opacity:.8;
+}
+.hero-arch:before,.hero-arch:after{border-color:#e0bd6d88}
+.hero-inner{
+  max-width:760px;
+  margin:0 auto;
+  padding:108px 30px 90px;
+  text-align:center;
+  position:relative;
+  z-index:3;
+}
+.hero .eyebrow{
+  color:#e7c978;
+  text-shadow:0 2px 18px #000;
+}
+.hero .small{color:#f4e7d4}
+.hero h1{
+  color:#fff8ea;
+  text-shadow:0 8px 38px rgba(0,0,0,.65);
+}
+.hero h1 i{color:#e2bd67}
+.hero .gold{color:#e0bd68}
+.hero-welcome{
+  color:#f1dfc8;
+  text-shadow:0 2px 14px #0008;
+}
+.hero .date{color:#fff4df}
+.hero .place{color:#e6c98b}
+.hero .down{color:#f0d48a}
+.tradition-strip{
+  background:linear-gradient(90deg,#27050f,#64132e 45%,#2a0612);
+}
+.story{
+  background:linear-gradient(135deg,#f7f0e5,#eee1d1);
+}
+.story-cinema{margin-top:12px}
+.story-orb{
+  background:radial-gradient(circle at 35% 30%,#fff4c9 0 5%,#d8b466 22%,#8b1c3b 58%,#210913 100%);
+  box-shadow:0 0 0 1px #b28a4580,0 0 55px #b28a4540;
+}
+.story-ring{border-color:#b28a4590}
+@media(max-width:720px){
+ .hero{
+   background:
+     linear-gradient(180deg,rgba(31,4,12,.90),rgba(78,10,28,.80) 50%,rgba(12,3,7,.96)),
+     url("images/share-preview.jpg") center/cover no-repeat;
+ }
+ .hero-inner{padding:88px 22px 130px}
+ .hero-arch{right:-32%;width:100%;height:60%;top:18%;opacity:.45}
+}
