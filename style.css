@@ -929,3 +929,180 @@ footer{background:#230610;border-top:1px solid rgba(199,154,69,.3)}footer small{
 @media(max-width:720px){
 .timeline{padding-left:24px}.timeline:before{left:10px}.timeline-item,.timeline-item:nth-child(odd),.timeline-item:nth-child(even){width:calc(100% - 10px);margin:0 0 22px 0}.timeline-item:after,.timeline-item:nth-child(odd):after,.timeline-item:nth-child(even):after{left:-20px;right:auto;top:28px;width:10px;height:10px}.timeline-item:nth-child(odd) .timeline-mark,.timeline-item:nth-child(even) .timeline-mark{right:18px;left:auto}.celebration-invocation{margin-bottom:16px}.count-ornament{letter-spacing:2px}
 }
+
+/* ---------- Save-the-dates calendar suite ---------- */
+.save-dates{
+  position:relative;
+  overflow:hidden;
+  padding:96px 28px;
+  background:
+    radial-gradient(circle at 84% 18%,rgba(200,155,75,.14),transparent 28%),
+    linear-gradient(135deg,#f8eddb,#efe0ca 56%,#f8efe2);
+  border-block:1px solid #d9c4a2;
+}
+.save-dates:before,.save-dates:after{
+  content:"❧";
+  position:absolute;
+  color:rgba(101,21,43,.08);
+  font:400 150px/1 "Cormorant Garamond",serif;
+}
+.save-dates:before{left:-30px;top:18px;transform:rotate(-20deg)}
+.save-dates:after{right:-28px;bottom:-5px;transform:rotate(160deg) scaleX(-1)}
+.save-dates-inner{
+  position:relative;
+  z-index:1;
+  max-width:1060px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 300px;
+  gap:65px;
+  align-items:center;
+}
+.save-dates-copy{text-align:left}
+.save-dates-copy .kicker{color:#936b31}
+.save-dates h2{
+  margin-top:7px;
+  font:500 clamp(50px,6vw,72px)/.95 "Cormorant Garamond",serif;
+  color:var(--maroon-ink);
+}
+.save-dates h2 em{color:#a47731}
+.save-dates-copy>p:not(.kicker){
+  max-width:620px;
+  margin-top:19px;
+  color:var(--muted);
+  font:400 19px/1.45 "Cormorant Garamond",serif;
+}
+.calendar-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-top:25px;
+}
+.calendar-button{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  padding:10px 14px;
+  border:1px solid #b99659;
+  color:var(--maroon);
+  background:rgba(255,250,242,.65);
+  font:700 9px Manrope,sans-serif;
+  letter-spacing:1.3px;
+  text-transform:uppercase;
+  transition:transform .25s ease,background .25s ease;
+}
+.calendar-button span{font-size:12px}
+.calendar-button:hover{transform:translateY(-2px);background:#fffaf1}
+.calendar-button.primary{color:#fff6e7;background:var(--maroon);border-color:var(--maroon)}
+.calendar-button.primary:hover{background:#4f0f22}
+.calendar-events{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1px;
+  margin-top:30px;
+  border:1px solid #d8c4a5;
+  background:#d8c4a5;
+}
+.calendar-events>div{
+  min-height:96px;
+  padding:16px 17px;
+  background:rgba(255,250,242,.88);
+}
+.calendar-events small{
+  display:block;
+  font-size:8px;
+  font-weight:700;
+  letter-spacing:2px;
+  color:#a47731;
+}
+.calendar-events b{
+  display:block;
+  margin-top:5px;
+  font:600 16px/1.15 "Cormorant Garamond",serif;
+  color:var(--maroon);
+}
+.calendar-events span{
+  display:block;
+  margin-top:5px;
+  font-size:9px;
+  line-height:1.4;
+  color:var(--muted);
+}
+.calendar-qr-wrap{
+  position:relative;
+  display:grid;
+  place-items:center;
+  min-height:310px;
+}
+.calendar-qr-frame{
+  width:245px;
+  padding:18px 18px 16px;
+  text-align:center;
+  background:#fffaf1;
+  border:1px solid #c89b4b;
+  box-shadow:0 20px 45px rgba(69,30,35,.12);
+}
+.calendar-qr-frame:before{
+  content:"";
+  position:absolute;
+  inset:5px;
+  border:1px solid rgba(200,155,75,.32);
+  pointer-events:none;
+}
+.calendar-qr-label{
+  margin-bottom:10px;
+  font-size:8px;
+  font-weight:700;
+  letter-spacing:2.5px;
+  color:#8f6731;
+}
+.calendar-qr{
+  display:block;
+  width:180px;
+  height:180px;
+  margin:auto;
+  padding:6px;
+  background:#fffaf1;
+  border:1px solid #e0cfb2;
+}
+.calendar-qr-caption{
+  margin-top:10px;
+  font:500 12px/1.25 "Cormorant Garamond",serif;
+  color:var(--maroon);
+}
+.calendar-seal{
+  position:absolute;
+  right:0;
+  bottom:0;
+  width:88px;
+  height:88px;
+  display:grid;
+  place-items:center;
+  padding:10px;
+  text-align:center;
+  border:1px solid #c89b4b;
+  border-radius:50%;
+  background:#f6ead7;
+  box-shadow:0 8px 22px rgba(69,30,35,.10);
+  color:var(--maroon);
+}
+.calendar-seal:before{
+  content:"";
+  position:absolute;
+  inset:5px;
+  border:1px dashed rgba(101,21,43,.28);
+  border-radius:50%;
+}
+.calendar-seal span{font-size:7px;letter-spacing:1px;color:#a47731}
+.calendar-seal b{font:600 8px/1.1 Manrope,sans-serif;letter-spacing:1px}
+
+@media(max-width:720px){
+  .save-dates{padding:76px 20px}
+  .save-dates-inner{grid-template-columns:1fr;gap:42px}
+  .save-dates-copy{text-align:center}
+  .save-dates-copy>p:not(.kicker){margin-left:auto;margin-right:auto;font-size:18px}
+  .calendar-actions{justify-content:center}
+  .calendar-events{text-align:left;grid-template-columns:1fr}
+  .calendar-qr-wrap{min-height:280px}
+  .calendar-seal{right:calc(50% - 155px);bottom:-8px}
+}
