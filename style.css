@@ -632,3 +632,87 @@ footer{background:#070204}
 @media (prefers-reduced-motion:reduce){
   .hero-inner{transition:none!important}
 }
+
+/* FINAL OPENING COMPOSITION — clean artwork + centered invitation typography */
+.hero{
+  align-items:center;
+  justify-content:center;
+  background-image:
+    linear-gradient(180deg,rgba(20,3,8,.12) 0%,rgba(35,5,12,.10) 28%,rgba(30,4,11,.50) 50%,rgba(27,4,10,.72) 100%),
+    url("images/opening-mandap.webp");
+  background-size:cover,cover;
+  background-position:center,center;
+}
+.hero-inner{
+  width:min(760px,88vw);
+  margin:0 auto;
+  padding:88px 28px 110px;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+.hero .eyebrow,
+.hero .small,
+.hero h1,
+.hero .gold,
+.hero-welcome,
+.hero .date,
+.hero .place,
+.hero .down{
+  text-align:center;
+}
+.hero .eyebrow{max-width:560px}
+.hero .small{max-width:620px}
+.hero h1{white-space:nowrap}
+.hero-welcome{max-width:620px}
+.hero .date{white-space:nowrap}
+.hero-inner:before,
+.hero-inner:after{
+  left:12%;
+  right:12%;
+}
+.hero-arch{
+  right:-8%;
+  width:45%;
+  opacity:.28;
+}
+.rangoli{
+  left:50%;
+  top:50%;
+  opacity:.22;
+}
+@media (min-width:721px){
+  .hero-inner{
+    background:radial-gradient(ellipse at center,rgba(37,5,13,.35) 0%,rgba(37,5,13,.12) 48%,transparent 76%);
+  }
+}
+@media (max-width:720px){
+  .hero{
+    background-image:
+      linear-gradient(180deg,rgba(18,3,8,.10) 0%,rgba(32,5,12,.28) 30%,rgba(29,4,10,.78) 66%,rgba(18,3,8,.90) 100%),
+      url("images/opening-mandap.webp");
+    background-size:cover,cover;
+    background-position:center,center;
+  }
+  .hero-inner{
+    width:100%;
+    padding:92px 22px 142px;
+    margin:0 auto;
+  }
+  .hero h1{
+    white-space:normal;
+    font-size:clamp(54px,16vw,82px);
+    line-height:.86;
+  }
+  .hero .date{white-space:normal}
+  .hero-welcome{max-width:350px}
+  .hero-inner:before,.hero-inner:after{left:9%;right:9%}
+  .hero-arch{
+    right:-42%;
+    width:120%;
+    opacity:.18;
+  }
+  .rangoli{opacity:.18}
+}
