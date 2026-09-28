@@ -880,3 +880,29 @@ footer{background:#070204}
 }
 .haldi h3,.haldi .tag,.haldi .facts b{color:#741b35}
 .haldi .facts span{color:#806e70}
+
+/* Reception — inspired by the uploaded dark floral-lantern backdrop */
+.hero h1 .name-cap{
+  display:inline-block;
+  font-size:1.52em !important;
+  line-height:.76;
+  transform:translateY:.01em;
+}
+.haldi{
+  background-image:
+    linear-gradient(rgba(255,196,22,.16),rgba(255,196,22,.16)),
+    url("images/haldi-flowers.svg");
+  background-size:cover,100% 100%;
+  background-position:center,center bottom;
+  background-repeat:no-repeat;
+  background-blend-mode:screen,normal;
+}
+.reception{
+  background-image:
+    linear-gradient(rgba(1,7,12,.18),rgba(1,7,12,.18)),
+    url("images/reception-backdrop.webp");
+  background-size:100% 100%;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-color:#06101a;
+}
