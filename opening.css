@@ -9,7 +9,7 @@
   isolation:isolate;
   background:
     linear-gradient(180deg,rgba(24,4,10,.10) 0%,rgba(35,5,13,.18) 34%,rgba(25,4,10,.42) 100%),
-    url("images/share-preview.jpg") center/cover no-repeat;
+    url("images/opening-mandap.webp") center/cover no-repeat;
 }
 .hero:before{
   content:"";
@@ -88,7 +88,7 @@
     min-height:100dvh;
     background:
       linear-gradient(180deg,rgba(20,3,9,.18),rgba(35,5,13,.34) 46%,rgba(18,3,8,.70) 100%),
-      url("images/share-preview.jpg") center/cover no-repeat;
+      url("images/opening-mandap.webp") center/cover no-repeat;
   }
   .hero:after{inset:11px}
   .hero-inner{
