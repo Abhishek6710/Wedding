@@ -85,3 +85,58 @@
 .wedding h3,.wedding .tag,.wedding .facts b{color:#fff!important}.wedding .facts span,.wedding .note{color:#f6dfc9!important}.wedding .map{border-color:#e2c373!important;color:#f7e5bd!important}.wedding .map:hover{background:#e2c373!important;color:#3c1020!important}.wedding .symbol,.wedding>strong{color:#f0ca72}
 
 .rsvp-intro{max-width:560px;margin:32px auto 24px;color:#d8c4c8;font:400 18px "Cormorant Garamond"}.rsvp-button{display:inline-block;margin-top:8px;padding:14px 30px;border:1px solid #e2c373;background:#e2c373;color:#3c1020;font:700 10px Manrope;letter-spacing:2px;text-transform:uppercase;transition:transform .25s ease,box-shadow .25s ease}.rsvp-button:hover{transform:translateY(-3px);box-shadow:0 10px 25px #0005}
+
+/* Grand royal landing — blending the share artwork with the living hero */
+body{background:#f7efe2;color:#302026}
+.hero{
+  min-height:100svh;
+  background:
+    radial-gradient(circle at 72% 42%,rgba(210,170,86,.18),transparent 25%),
+    radial-gradient(circle at 25% 70%,rgba(119,20,47,.32),transparent 30%),
+    linear-gradient(120deg,#16050d 0%,#3a0a1c 42%,#12040a 100%);
+}
+.hero:before{inset:18px;border:1px solid rgba(226,195,115,.48);box-shadow:inset 0 0 90px rgba(0,0,0,.25)}
+.hero:after{inset:31px;border:1px solid rgba(255,255,255,.10);animation:frameGlow 4s ease-in-out infinite}
+.hero-inner{position:relative;max-width:760px;margin:0 auto;padding:110px 28px 80px}
+.hero .eyebrow{color:#e8ca7d;text-shadow:0 2px 20px #000}
+.hero .small{font-size:23px;color:#f8ead5}
+.hero h1{font-size:clamp(78px,13vw,150px);text-shadow:0 8px 45px rgba(0,0,0,.4)}
+.hero-welcome{max-width:510px;margin:22px auto 0;font:400 19px/1.45 "Cormorant Garamond";color:#f3dfc6;opacity:.9}
+.hero-preview{
+  position:absolute;right:7%;bottom:7%;width:min(305px,25vw);z-index:2;
+  transform:rotate(3deg);animation:previewFloat 5s ease-in-out infinite;
+  filter:drop-shadow(0 28px 42px rgba(0,0,0,.45));
+}
+.preview-frame{padding:9px;background:linear-gradient(145deg,#f7e8bd,#b98a3f 35%,#f2d993 60%,#8e6326);box-shadow:0 0 0 1px rgba(255,255,255,.25),inset 0 0 0 1px rgba(70,30,12,.35)}
+.preview-frame img{display:block;width:100%;aspect-ratio:2/1;object-fit:cover}
+.preview-caption{display:block;text-align:center;margin-top:12px;font:600 8px Manrope;letter-spacing:2px;text-transform:uppercase;color:#d8bd79}
+.hero-arch{
+  position:absolute;left:-8%;top:9%;width:46%;height:78%;border:1px solid rgba(216,181,95,.13);
+  border-bottom:0;border-radius:50% 50% 0 0;box-shadow:0 0 80px rgba(194,145,58,.06);
+  transform:rotate(-7deg);pointer-events:none;
+}
+.hero-arch:before,.hero-arch:after{content:"";position:absolute;top:8%;width:18px;height:18px;border:1px solid #d9b96966;transform:rotate(45deg)}
+.hero-arch:before{left:2%}.hero-arch:after{right:2%}
+.tradition-strip{background:linear-gradient(90deg,#3a091b,#721b36 50%,#280611);padding:46px 20px;box-shadow:0 15px 40px rgba(44,8,20,.16)}
+.tradition-strip b{display:block;margin-top:12px;font:500 25px "Cormorant Garamond";color:#fff3d9}
+.story,.gallery,.events{background:transparent}
+.story h2,.events>h2,.gallery h2,.family h2,.rsvp h2{color:#3a0b1d}
+.story h2 em,.events h2 em,.gallery h2 em,.family h2 em,.rsvp h2 em{color:#8c1f3d}
+.count{background:linear-gradient(135deg,#ead7bd,#f7eee0 50%,#dfc6a5);border-color:#c9a86c}
+.count b{color:#7b1735}
+.timeline-item{background:linear-gradient(145deg,#fffaf1,#f5e9d7);border-color:#d2b57e;box-shadow:0 16px 40px rgba(68,24,29,.08)}
+.timeline-item h3{color:#7b1735}
+.family{background:linear-gradient(135deg,#2b0714,#4d0d23);color:#fff}
+.family h2{color:#fff}
+.family-grid>div{background:#fffaf3;border-color:#c9a86c}
+.rsvp{background:radial-gradient(circle at 50% 0,rgba(198,157,73,.14),transparent 30%),linear-gradient(135deg,#12050b,#36091b 52%,#16050b)}
+footer{background:#0c0307}
+@keyframes previewFloat{0%,100%{transform:rotate(3deg) translateY(0)}50%{transform:rotate(1.5deg) translateY(-10px)}}
+@media(max-width:1050px){.hero-preview{right:4%;bottom:5%;width:235px}.hero-inner{padding-right:120px}}
+@media(max-width:720px){
+  .hero-inner{padding:92px 22px 145px}
+  .hero-preview{width:190px;right:50%;bottom:20px;transform:translateX(50%) rotate(2deg)}
+  .hero-welcome{font-size:17px;max-width:330px}
+  .hero .small{font-size:20px}
+  .hero-arch{left:-25%;width:90%;height:55%;top:18%}
+}
