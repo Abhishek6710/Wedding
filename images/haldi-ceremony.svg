@@ -1,36 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280">
 <defs>
- <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#ffd83d"/><stop offset=".5" stop-color="#f6bd19"/><stop offset="1" stop-color="#d98b00"/></linearGradient>
- <linearGradient id="gold"><stop stop-color="#fff1a8"/><stop offset=".55" stop-color="#e7a51c"/><stop offset="1" stop-color="#9b5b0a"/></linearGradient>
- <radialGradient id="sun"><stop stop-color="#fff6b0" stop-opacity=".72"/><stop offset="1" stop-color="#fff6b0" stop-opacity="0"/></radialGradient>
+ <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffd94a"/><stop offset="1" stop-color="#e9a50d"/></linearGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8a4b0a"/><stop offset=".5" stop-color="#b86f13"/><stop offset="1" stop-color="#70400a"/></linearGradient>
+ <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#fff3a8" opacity=".22"/></pattern>
 </defs>
-<rect width="1200" height="520" rx="14" fill="url(#bg)"/>
-<circle cx="600" cy="255" r="245" fill="url(#sun)"/>
-<!-- marigold toran -->
-<path d="M0 62 Q80 105 160 62 T320 62 T480 62 T640 62 T800 62 T960 62 T1120 62 T1200 62" fill="none" stroke="#8e3c16" stroke-width="5" opacity=".65"/>
-<g fill="#f58b12" stroke="#b95708" stroke-width="3">
- <g transform="translate(55 45)"><circle r="22"/><circle r="12" fill="#ffd83d"/></g><g transform="translate(135 67)"><circle r="20"/><circle r="11" fill="#ffd83d"/></g>
- <g transform="translate(215 47)"><circle r="22"/><circle r="12" fill="#ffd83d"/></g><g transform="translate(985 47)"><circle r="22"/><circle r="12" fill="#ffd83d"/></g>
- <g transform="translate(1065 67)"><circle r="20"/><circle r="11" fill="#ffd83d"/></g><g transform="translate(1145 45)"><circle r="22"/><circle r="12" fill="#ffd83d"/></g>
+<rect width="960" height="280" fill="url(#bg)"/><rect width="960" height="280" fill="url(#dots)"/>
+<!-- refined toran -->
+<path d="M8 20 Q85 72 162 20 T316 20 T470 20 T624 20 T778 20 T952 20" fill="none" stroke="#8a4b0a" stroke-width="3" opacity=".72"/>
+<g fill="#e87812" stroke="#8a4b0a" stroke-width="2">
+ <circle cx="78" cy="47" r="8"/><circle cx="162" cy="49" r="8"/><circle cx="246" cy="47" r="8"/>
+ <circle cx="714" cy="47" r="8"/><circle cx="798" cy="49" r="8"/><circle cx="882" cy="47" r="8"/>
 </g>
-<!-- corner floral sprays -->
-<g fill="none" stroke="#8d4515" stroke-width="5" opacity=".85">
- <path d="M32 120 Q85 150 125 205 M32 120 Q70 145 78 205 M125 205q-28-6-48 18 M78 205q-24 5-35 28"/>
- <path d="M1168 120 Q1115 150 1075 205 M1168 120 Q1130 145 1122 205 M1075 205q28-6 48 18 M1122 205q24 5 35 28"/>
+<!-- left floral corner -->
+<g fill="none" stroke="#8a4b0a" stroke-width="3" opacity=".9">
+ <path d="M18 94 Q57 57 100 94 Q61 98 45 132 Q35 111 18 94Z"/>
+ <path d="M30 142 Q63 115 98 136 Q69 143 57 168"/>
 </g>
-<g fill="#f98e13"><circle cx="85" cy="160" r="13"/><circle cx="116" cy="188" r="11"/><circle cx="1115" cy="160" r="13"/><circle cx="1084" cy="188" r="11"/></g>
-<!-- kalash -->
-<g transform="translate(85 355)" stroke="#7d3b12" stroke-width="5">
- <path d="M20 78 Q30 35 70 35 Q110 35 120 78 Q100 105 70 105 Q40 105 20 78Z" fill="#e9a514"/>
- <path d="M35 36 Q70 0 105 36" fill="none"/><path d="M49 22 Q70 45 91 22" fill="none"/>
- <path d="M70 0v28M56 5l-18-14M84 5l18-14" fill="none"/><path d="M10 112h120" fill="none"/>
+<g fill="#e87511"><circle cx="66" cy="84" r="9"/><circle cx="88" cy="104" r="7"/><circle cx="49" cy="107" r="6"/></g>
+<!-- right floral corner -->
+<g fill="none" stroke="#8a4b0a" stroke-width="3" opacity=".9">
+ <path d="M942 94 Q903 57 860 94 Q899 98 915 132 Q925 111 942 94Z"/>
+ <path d="M930 142 Q897 115 862 136 Q891 143 903 168"/>
 </g>
-<g transform="translate(995 355)" stroke="#7d3b12" stroke-width="5">
- <path d="M20 78 Q30 35 70 35 Q110 35 120 78 Q100 105 70 105 Q40 105 20 78Z" fill="#e9a514"/>
- <path d="M35 36 Q70 0 105 36" fill="none"/><path d="M49 22 Q70 45 91 22" fill="none"/>
- <path d="M70 0v28M56 5l-18-14M84 5l18-14" fill="none"/><path d="M10 112h120" fill="none"/>
+<g fill="#e87511"><circle cx="894" cy="84" r="9"/><circle cx="872" cy="104" r="7"/><circle cx="911" cy="107" r="6"/></g>
+<!-- bottom rangoli band -->
+<path d="M0 257 Q80 235 160 257 T320 257 T480 257 T640 257 T800 257 T960 257" fill="none" stroke="#8a4b0a" stroke-width="2" opacity=".55"/>
+<g fill="none" stroke="#9b5a0c" stroke-width="2" opacity=".72">
+ <path d="M58 269 l12 -12 12 12 -12 12z"/><path d="M878 269 l12 -12 12 12 -12 12z"/>
 </g>
-<!-- subtle lotus border -->
-<path d="M260 478q28-38 56 0q28-38 56 0q28-38 56 0q28-38 56 0q28-38 56 0q28-38 56 0q28-38 56 0q28-38 56 0q28-38 56 0" fill="none" stroke="url(#gold)" stroke-width="4" opacity=".8"/>
-<path d="M260 478q28 18 56 0q28 18 56 0q28 18 56 0q28 18 56 0q28 18 56 0q28 18 56 0q28 18 56 0q28 18 56 0q28 18 56 0" fill="none" stroke="#fff0a0" stroke-width="2" opacity=".7"/>
+<!-- restrained kalash silhouettes at far edges -->
+<g fill="none" stroke="#75410a" stroke-width="3" opacity=".7">
+ <path d="M76 217 Q76 192 96 184 Q116 192 116 217 Q106 231 96 231 Q86 231 76 217Z"/>
+ <path d="M84 184 Q96 173 108 184 M80 174 Q96 163 112 174"/>
+ <path d="M844 217 Q844 192 864 184 Q884 192 884 217 Q874 231 864 231 Q854 231 844 217Z"/>
+ <path d="M852 184 Q864 173 876 184 M848 174 Q864 163 880 174"/>
+</g>
+<!-- tiny marigold clusters -->
+<g fill="#9b5a0c" opacity=".7"><circle cx="184" cy="74" r="5"/><circle cx="193" cy="68" r="5"/><circle cx="202" cy="74" r="5"/><circle cx="758" cy="74" r="5"/><circle cx="767" cy="68" r="5"/><circle cx="776" cy="74" r="5"/></g>
+<rect x="10" y="10" width="940" height="260" rx="1" fill="none" stroke="#8a4b0a" stroke-width="1.4" opacity=".45"/>
+<rect x="19" y="19" width="922" height="242" fill="none" stroke="#fff2aa" stroke-width="1" opacity=".38"/>
 </svg>

@@ -1,35 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280">
 <defs>
- <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#430714"/><stop offset=".5" stop-color="#78152a"/><stop offset="1" stop-color="#33050f"/></linearGradient>
- <linearGradient id="gold"><stop stop-color="#fff1b1"/><stop offset=".5" stop-color="#e1b65d"/><stop offset="1" stop-color="#9b6829"/></linearGradient>
- <radialGradient id="glow"><stop stop-color="#f0cf78" stop-opacity=".20"/><stop offset="1" stop-color="#f0cf78" stop-opacity="0"/></radialGradient>
+ <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7c1029"/><stop offset="1" stop-color="#4b071a"/></linearGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b87827"/><stop offset=".5" stop-color="#efcb73"/><stop offset="1" stop-color="#9b5c1c"/></linearGradient>
 </defs>
-<rect width="1200" height="520" rx="14" fill="url(#bg)"/>
-<circle cx="600" cy="250" r="245" fill="url(#glow)"/>
-<!-- gold toran -->
-<path d="M0 58q75 55 150 0t150 0t150 0t150 0t150 0t150 0t150 0t150 0" fill="none" stroke="#e2bd67" stroke-width="4"/>
-<g fill="#e2bd67"><circle cx="75" cy="76" r="7"/><circle cx="225" cy="76" r="7"/><circle cx="975" cy="76" r="7"/><circle cx="1125" cy="76" r="7"/></g>
-<!-- central mandap arch -->
-<g fill="none" stroke="url(#gold)" stroke-width="7" opacity=".62">
- <path d="M335 420V170 Q600 20 865 170V420"/>
- <path d="M380 420V190 Q600 62 820 190V420"/>
- <path d="M425 420V215 Q600 105 775 215V420"/>
- <path d="M470 420V240 Q600 145 730 240V420"/>
+<rect width="960" height="280" fill="url(#bg)"/>
+<!-- top toran -->
+<path d="M15 22 Q100 70 185 22 T355 22 T525 22 T695 22 T865 22 T945 22" fill="none" stroke="url(#gold)" stroke-width="3"/>
+<g fill="#d8b35f" opacity=".9">
+ <path d="M82 35l8 13 15 4-15 5-8 13-8-13-15-5 15-4z"/>
+ <path d="M878 35l8 13 15 4-15 5-8 13-8-13-15-5 15-4z"/>
 </g>
-<g fill="#e6c16d" opacity=".72">
- <circle cx="335" cy="175" r="9"/><circle cx="865" cy="175" r="9"/><circle cx="380" cy="193" r="7"/><circle cx="820" cy="193" r="7"/>
+<!-- restrained mandap arch on right side, leaving title clear -->
+<g fill="none" stroke="url(#gold)" opacity=".72">
+ <path d="M680 248V148 Q680 75 758 75 Q836 75 836 148V248" stroke-width="5"/>
+ <path d="M700 248V151 Q700 98 758 98 Q816 98 816 151V248" stroke-width="2.5"/>
+ <path d="M720 248V155 Q720 119 758 119 Q796 119 796 155V248" stroke-width="1.5"/>
+</g>
+<!-- floral/leaf mandap top -->
+<g fill="none" stroke="#e7c573" stroke-width="2" opacity=".8">
+ <path d="M684 104 Q700 76 720 96 Q738 68 758 94 Q778 68 796 96 Q816 76 832 104"/>
+ <path d="M690 105 Q705 118 720 104 M826 105 Q811 118 796 104"/>
+</g>
+<!-- left kalash -->
+<g fill="none" stroke="#e2bd69" stroke-width="3" opacity=".88">
+ <path d="M61 224 Q61 196 83 187 Q105 196 105 224 Q94 239 83 239 Q72 239 61 224Z"/>
+ <path d="M70 187 Q83 174 96 187 M66 176 Q83 163 100 176"/>
+ <path d="M83 163v-17"/>
+</g>
+<!-- right kalash -->
+<g fill="none" stroke="#e2bd69" stroke-width="3" opacity=".88">
+ <path d="M855 224 Q855 196 877 187 Q899 196 899 224 Q888 239 877 239 Q866 239 855 224Z"/>
+ <path d="M864 187 Q877 174 890 187 M860 176 Q877 163 894 176"/>
+ <path d="M877 163v-17"/>
 </g>
 <!-- diyas -->
-<g fill="#e7bd65" stroke="#8f5d25" stroke-width="4">
- <path d="M95 390q35-42 70 0q-10 32-35 32t-35-32z"/><path d="M1035 390q35-42 70 0q-10 32-35 32t-35-32z"/>
+<g fill="#e4bd69" stroke="#7c4a1b" stroke-width="2">
+ <path d="M25 258 Q46 238 67 258 Q46 272 25 258Z"/><path d="M893 258 Q914 238 935 258 Q914 272 893 258Z"/>
 </g>
-<g stroke="#ffe7a0" stroke-width="4" stroke-linecap="round"><path d="M130 378l0-28M1070 378l0-28"/></g>
-<!-- kalash -->
-<g fill="none" stroke="#e7c36e" stroke-width="4">
- <path d="M45 260q30-28 60 0v65q-30 24-60 0zM1095 260q30-28 60 0v65q-30 24-60 0z"/>
- <path d="M55 260q20-32 40 0M1105 260q20-32 40 0M75 230v28M1125 230v28"/>
- <path d="M60 238l-16-18M90 238l16-18M1110 238l-16-18M1140 238l16-18"/>
+<g stroke="#efcf79" stroke-width="2" opacity=".8"><path d="M46 244v-10"/><path d="M914 244v-10"/></g>
+<!-- subtle lotus linework at bottom -->
+<g fill="none" stroke="#d8b35f" stroke-width="1.5" opacity=".42">
+ <path d="M250 264 Q270 236 290 264 Q310 236 330 264 Q350 236 370 264"/>
+ <path d="M590 264 Q610 236 630 264 Q650 236 670 264"/>
 </g>
-<!-- lotus base -->
-<path d="M250 470q35-48 70 0q35-48 70 0q35-48 70 0q35-48 70 0q35-48 70 0q35-48 70 0q35-48 70 0q35-48 70 0q35-48 70 0" fill="none" stroke="#e5c16d" stroke-width="4" opacity=".75"/>
+<!-- small om, intentionally secondary -->
+<text x="86" y="82" text-anchor="middle" font-size="27" font-family="serif" fill="#edcc77" opacity=".9">ॐ</text>
+<rect x="10" y="10" width="940" height="260" fill="none" stroke="#e7c573" stroke-width="1.5" opacity=".55"/>
+<rect x="19" y="19" width="922" height="242" fill="none" stroke="#fff0c8" stroke-width="1" opacity=".24"/>
 </svg>

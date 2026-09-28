@@ -1,35 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280">
 <defs>
- <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#16091f"/><stop offset=".48" stop-color="#432052"/><stop offset="1" stop-color="#21091f"/></linearGradient>
- <linearGradient id="gold"><stop stop-color="#fff0b0"/><stop offset=".5" stop-color="#d9ad55"/><stop offset="1" stop-color="#8f6425"/></linearGradient>
- <radialGradient id="glow"><stop stop-color="#e8c66e" stop-opacity=".18"/><stop offset="1" stop-color="#e8c66e" stop-opacity="0"/></radialGradient>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#281034"/><stop offset=".55" stop-color="#4b1c59"/><stop offset="1" stop-color="#24102f"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#d6a95a" stop-opacity=".24"/><stop offset="1" stop-color="#d6a95a" stop-opacity="0"/></radialGradient>
 </defs>
-<rect width="1200" height="520" rx="14" fill="url(#bg)"/>
-<circle cx="600" cy="270" r="245" fill="url(#glow)"/>
-<!-- hanging strings, bells and flowers -->
-<g stroke="#dcb96c" stroke-width="3" fill="none" opacity=".9">
- <path d="M55 0v88M145 0v125M1055 0v125M1145 0v88"/>
- <path d="M25 88q30 30 60 0t60 0M85 125q30 30 60 0t60 0M995 125q30 30 60 0t60 0M1115 88q30 30 60 0"/>
+<rect width="960" height="280" fill="url(#bg)"/><ellipse cx="735" cy="144" rx="170" ry="150" fill="url(#glow)"/>
+<!-- hanging latkans -->
+<g fill="none" stroke="#c99f58" stroke-width="2" opacity=".85">
+ <path d="M36 10v38 q0 20 18 28 q18-8 18-28V10"/><path d="M126 10v31 q0 17 16 24 q16-7 16-24V10"/>
+ <path d="M834 10v31 q0 17 16 24 q16-7 16-24V10"/><path d="M904 10v38 q0 20 18 28 q18-8 18-28V10"/>
 </g>
-<g fill="#dcb96c"><circle cx="55" cy="90" r="8"/><circle cx="145" cy="127" r="8"/><circle cx="1055" cy="127" r="8"/><circle cx="1145" cy="90" r="8"/></g>
-<g fill="none" stroke="url(#gold)" stroke-width="4">
- <path d="M35 90q20 30 40 0v28H35zM125 127q20 30 40 0v28h-40zM1035 127q20 30 40 0v28h-40zM1125 90q20 30 40 0v28h-40z"/>
+<g fill="#e7c56f"><circle cx="54" cy="66" r="5"/><circle cx="142" cy="60" r="4"/><circle cx="858" cy="60" r="4"/><circle cx="922" cy="66" r="5"/></g>
+<g fill="none" stroke="#e7c56f" stroke-width="1.5"><path d="M31 75l23 23 23-23"/><path d="M839 75l23 23 23-23"/></g>
+<!-- paisley corners -->
+<g fill="none" stroke="#c99f58" stroke-width="3" opacity=".85">
+ <path d="M42 185 C18 142 39 109 76 112 C113 115 122 152 94 173 C78 185 61 183 58 168 C55 153 68 143 80 149"/>
+ <path d="M918 185 C942 142 921 109 884 112 C847 115 838 152 866 173 C882 185 899 183 902 168 C905 153 892 143 880 149"/>
 </g>
-<!-- paisley corner ornaments -->
-<g fill="none" stroke="#dcb96c" stroke-width="4" opacity=".75">
- <path d="M65 380q-35-90 42-122q60-25 78 36q12 42-25 65q-35 22-66-8q-18-18-2-38"/>
- <path d="M1135 380q35-90-42-122q-60-25-78 36q-12 42 25 65q35 22 66-8q18-18 2-38"/>
+<!-- small sparkle field, kept away from title -->
+<g fill="#e8c66f"><path d="M185 61l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/><path d="M785 206l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/><circle cx="211" cy="230" r="2"/><circle cx="749" cy="54" r="2"/><circle cx="225" cy="42" r="1.7"/><circle cx="723" cy="234" r="1.7"/></g>
+<!-- dhol hero placed in right third, not behind title -->
+<g transform="translate(742 103) rotate(-8)" opacity=".78">
+ <ellipse cx="0" cy="38" rx="58" ry="26" fill="#7a4c58" stroke="#d4ae64" stroke-width="3"/>
+ <path d="M-58 38v48 Q0 115 58 86V38" fill="#5a3345" stroke="#d4ae64" stroke-width="3"/>
+ <ellipse cx="0" cy="38" rx="48" ry="20" fill="#a06b71" stroke="#e4c57a" stroke-width="2"/>
+ <path d="M-36 25l36 25 36-25M-36 51l36-25 36 25" fill="none" stroke="#d9b56b" stroke-width="2"/>
+ <path d="M-47 57l-12 53M47 57l12 53" stroke="#d9b56b" stroke-width="4" stroke-linecap="round"/>
+ <circle cx="-34" cy="43" r="4" fill="#e9c979"/><circle cx="34" cy="43" r="4" fill="#e9c979"/>
 </g>
-<!-- central dhol motif -->
-<g transform="translate(475 155)" opacity=".34">
- <path d="M80 25 Q145 0 210 25 L245 185 Q145 220 45 185Z" fill="#b9873c" stroke="#f0d17c" stroke-width="7"/>
- <ellipse cx="80" cy="105" rx="35" ry="80" fill="#f1d48a" stroke="#b9873c" stroke-width="6"/>
- <ellipse cx="210" cy="105" rx="35" ry="80" fill="#f1d48a" stroke="#b9873c" stroke-width="6"/>
- <path d="M85 35L205 175M85 175L205 35M65 60L225 150M65 150L225 60" stroke="#7f4b24" stroke-width="5"/>
- <path d="M35 35l-45-38M255 35l45-38" stroke="#f0d17c" stroke-width="8"/>
- <circle cx="145" cy="105" r="18" fill="#fff0b0"/>
-</g>
-<!-- musical sparkle border -->
-<g fill="#e6c775"><circle cx="270" cy="425" r="3"/><circle cx="295" cy="445" r="5"/><circle cx="930" cy="425" r="4"/><circle cx="905" cy="447" r="3"/></g>
-<path d="M255 475q45-32 90 0t90 0t90 0M945 475q-45-32-90 0t-90 0t-90 0" fill="none" stroke="#dcb96c" stroke-width="3" opacity=".8"/>
+<!-- bottom ornamental line -->
+<path d="M28 254 Q115 225 202 254 T376 254" fill="none" stroke="#c99f58" stroke-width="1.5" opacity=".65"/>
+<path d="M584 254 Q671 225 758 254 T932 254" fill="none" stroke="#c99f58" stroke-width="1.5" opacity=".65"/>
+<rect x="10" y="10" width="940" height="260" fill="none" stroke="#e2bd6c" stroke-width="1.4" opacity=".55"/>
+<rect x="19" y="19" width="922" height="242" fill="none" stroke="#fff0c8" stroke-width="1" opacity=".24"/>
 </svg>

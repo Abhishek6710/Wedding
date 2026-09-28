@@ -590,7 +590,7 @@ button,input,select,textarea{font:inherit}
   border-color:#a46b18;
 }
 .haldi:before{border-color:rgba(116,50,16,.28)}
-.haldi:after{content:"❋"}
+.haldi:after{content:"";width:42px;height:42px;border:1px solid rgba(116,50,16,.22);border-radius:50%;right:28px;bottom:22px}
 .haldi .symbol{color:#8f4f0b}
 
 /* Sangeet — jewel plum, dhol, hanging bells and shimmer */
@@ -604,7 +604,7 @@ button,input,select,textarea{font:inherit}
   border-color:rgba(239,202,114,.62);
 }
 .sangeet:before{border-color:rgba(239,202,114,.34)}
-.sangeet:after{content:"✦";font-size:42px}
+.sangeet:after{content:"✦";font-size:28px;color:rgba(239,202,114,.34)}
 .sangeet .symbol{color:#efca72}
 
 /* Wedding — kumkum maroon, mandap arch and sacred lamps */
@@ -618,7 +618,7 @@ button,input,select,textarea{font:inherit}
   border-color:rgba(240,202,114,.65);
 }
 .wedding:before{border-color:rgba(240,202,114,.38)}
-.wedding:after{content:"ॐ";font-size:39px}
+.wedding:after{content:"";width:36px;height:36px;border:1px solid rgba(240,202,114,.28);border-radius:50%;right:28px;bottom:20px}
 .wedding .symbol{color:#f0ca72}
 
 /* Reception — midnight, lanterns, floral corners, art-deco mood */
@@ -632,7 +632,7 @@ button,input,select,textarea{font:inherit}
   border-color:rgba(240,202,114,.58);
 }
 .reception:before{border-color:rgba(240,202,114,.34)}
-.reception:after{content:"✧";font-size:43px}
+.reception:after{content:"✧";font-size:27px;color:rgba(240,202,114,.34)}
 .reception .symbol{color:#f0ca72}
 
 /* ---------- Gallery ---------- */
