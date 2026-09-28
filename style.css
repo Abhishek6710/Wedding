@@ -908,3 +908,24 @@ footer small{display:block;margin-top:18px;opacity:.5}
   .event h3{font-size:44px}
   .tag{font-size:19px}
 }
+
+/* ---------- Final invitation refinement ---------- */
+.story{background:radial-gradient(circle at 50% 0,rgba(200,155,75,.06),transparent 34%),var(--paper)}
+.timeline{position:relative;display:block;max-width:920px;margin:62px auto 20px;padding:4px 0}
+.timeline:before{content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(180deg,transparent,var(--gold) 8%,var(--gold) 92%,transparent);opacity:.7}
+.timeline-item{width:calc(50% - 34px);margin:0 0 28px;padding:24px 28px;background:rgba(255,250,242,.92);border:1px solid rgba(200,155,75,.34);box-shadow:0 14px 35px rgba(69,30,35,.055)}
+.timeline-item:nth-child(odd){margin-right:auto}.timeline-item:nth-child(even){margin-left:auto}.timeline-item:before{display:none}
+.timeline-item:after{content:"";position:absolute;top:29px;width:11px;height:11px;border:1px solid var(--gold);background:var(--paper);transform:rotate(45deg)}
+.timeline-item:nth-child(odd):after{right:-41px}.timeline-item:nth-child(even):after{left:-41px}
+.timeline-mark{position:absolute;top:20px;font-size:15px;color:var(--gold);opacity:.85}.timeline-item:nth-child(odd) .timeline-mark{right:22px}.timeline-item:nth-child(even) .timeline-mark{left:22px}
+.timeline-item h3{font-size:30px}.timeline-item p{font-size:16px}
+.count{padding:68px 20px 62px;background:linear-gradient(90deg,rgba(116,27,53,.035),transparent 22%,transparent 78%,rgba(116,27,53,.035)),#f0e2cf;border-block:1px solid #d9c4a2}
+.count-ornament{margin-bottom:10px;color:#b68a43;font:500 10px Manrope;letter-spacing:4px;opacity:.9}.count-date{margin-top:24px;color:#8e6936;font:700 9px Manrope;letter-spacing:3px}
+.tradition-strip{padding:38px 20px 34px;background:linear-gradient(90deg,#360918,#6e1934 50%,#2a0612),repeating-linear-gradient(90deg,transparent 0 13px,rgba(228,197,111,.08) 13px 14px)}
+.paithani-rule{width:min(520px,80%);margin:0 auto 15px;display:flex;align-items:center;gap:10px;color:#d7b366;opacity:.8}.paithani-rule i{height:1px;flex:1;background:linear-gradient(90deg,transparent,rgba(215,179,102,.7))}.paithani-rule i:nth-of-type(2){background:linear-gradient(90deg,rgba(215,179,102,.7),transparent)}.paithani-rule span{font-size:8px}.tradition-strip .paithani-rule:last-child{margin:17px auto 0}
+.celebration-invocation{display:flex;align-items:center;justify-content:center;gap:13px;margin:0 auto 20px;color:#a47731;font:500 15px "Cormorant Garamond",serif;letter-spacing:2px}.celebration-invocation span{color:#c49a4d;font-size:14px}.celebration-invocation b{font-weight:600}
+.family{background:radial-gradient(circle at 50% 0,rgba(200,155,75,.13),transparent 34%),linear-gradient(180deg,#f4e7d5,#eee0ca)}.family-grid>div{background:#fffaf1}.family-grid p{font:400 17px/1.45 "Cormorant Garamond",serif}.family-grid p span{display:block}.family-grid p span+span{margin-top:5px}.family .kicker{color:#8f6731}.family h2{color:#64152b}.family h2 em{color:#a47731}
+footer{background:#230610;border-top:1px solid rgba(199,154,69,.3)}footer small{color:#e0cba9;opacity:.72;letter-spacing:1px}
+@media(max-width:720px){
+.timeline{padding-left:24px}.timeline:before{left:10px}.timeline-item,.timeline-item:nth-child(odd),.timeline-item:nth-child(even){width:calc(100% - 10px);margin:0 0 22px 0}.timeline-item:after,.timeline-item:nth-child(odd):after,.timeline-item:nth-child(even):after{left:-20px;right:auto;top:28px;width:10px;height:10px}.timeline-item:nth-child(odd) .timeline-mark,.timeline-item:nth-child(even) .timeline-mark{right:18px;left:auto}.celebration-invocation{margin-bottom:16px}.count-ornament{letter-spacing:2px}
+}
