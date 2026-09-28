@@ -177,3 +177,28 @@ footer{background:#070204}
 .rsvp-form{display:none}
 @media(max-width:1050px){.hero-preview{width:220px;right:3%}.hero-inner{padding-right:90px}}
 @media(max-width:720px){.hero-inner{padding:88px 22px 155px}.hero-preview{width:185px;right:50%;bottom:18px;transform:translateX(50%) rotate(1.5deg)}.hero-welcome{font-size:17px}.hero h1{font-size:78px}.hero-arch{opacity:.25}}
+
+/* Refined palette + cinematic story */
+.hero{background:
+ radial-gradient(circle at 78% 22%,rgba(205,170,91,.20),transparent 18%),
+ radial-gradient(circle at 18% 72%,rgba(48,117,146,.18),transparent 25%),
+ linear-gradient(115deg,#07131d 0%,#10283a 42%,#2c0a1a 78%,#080b12 100%)}
+.hero .eyebrow{color:#e5c979}.hero .small{color:#e9e4d9}.hero h1{color:#fffaf0}
+.hero-welcome{color:#d9e0dd}
+.hero-preview{filter:drop-shadow(0 25px 45px rgba(0,0,0,.55))}
+.tradition-strip{background:linear-gradient(90deg,#07141d,#173447 48%,#260a18)}
+.section{background:#f6f1e8}
+.story{position:relative;overflow:hidden;background:linear-gradient(135deg,#f6f1e8,#eee4d5)}
+.story:before{content:"";position:absolute;width:520px;height:520px;border:1px solid #b08b4a33;border-radius:50%;right:-210px;top:50%;transform:translateY(-50%);animation:storyOrbit 18s linear infinite}
+.story-cinema{position:relative;height:145px;max-width:760px;margin:18px auto 18px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.story-cinema:before{content:"";position:absolute;width:330px;height:1px;background:linear-gradient(90deg,transparent,#b28a45,transparent);animation:storyLine 3s ease-in-out infinite}
+.story-orb{width:92px;height:92px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff5d5 0 5%,#d4ad61 22%,#7d1736 58%,#1a0b15 100%);box-shadow:0 0 0 1px #b28a4566,0 0 50px #b28a4533;animation:storyOrb 4s ease-in-out infinite}
+.story-ring{position:absolute;width:130px;height:130px;border:1px solid #b28a4580;border-radius:50%;animation:storyRing 8s linear infinite}
+.story-spark{position:absolute;color:#b28a45;font-size:22px;animation:storySpark 2.5s ease-in-out infinite}
+.story .lead{max-width:650px;margin-left:auto;margin-right:auto}
+@keyframes storyOrb{0%,100%{transform:scale(.9);filter:brightness(.9)}50%{transform:scale(1.08);filter:brightness(1.18)}}
+@keyframes storyRing{to{transform:rotate(360deg) scale(1.15)}}
+@keyframes storyLine{0%,100%{opacity:.25;transform:scaleX(.5)}50%{opacity:1;transform:scaleX(1)}}
+@keyframes storySpark{0%,100%{opacity:.2;transform:translateY(8px) scale(.8)}50%{opacity:1;transform:translateY(-8px) scale(1.1)}}
+@keyframes storyOrbit{to{transform:translateY(-50%) rotate(360deg)}}
+@media(max-width:720px){.hero{background:linear-gradient(150deg,#07131d,#132d40 48%,#300b1e)}.story-cinema{height:110px}.story-orb{width:70px;height:70px}.story-ring{width:100px;height:100px}}
