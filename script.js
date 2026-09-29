@@ -1,5 +1,26 @@
-const events=[{name:"Haldi",at:"2026-12-09T11:00:00+05:30"},{name:"Sangeet",at:"2026-12-09T18:30:00+05:30"},{name:"The Wedding",at:"2026-12-10T12:10:00+05:30"},{name:"Reception",at:"2026-12-12T19:00:00+05:30"}].map(e=>({...e,time:new Date(e.at).getTime()}));
-function pad(n){return String(Math.max(0,n)).padStart(2,"0")}
-function renderCountdown(){const now=Date.now(),next=events.find(e=>e.time>now),label=document.getElementById("nextEvent");if(!next){label.innerHTML="<span>Our celebrations have begun</span><b>See you there</b>";return}const diff=Math.max(0,next.time-now),vals=[Math.floor(diff/86400000),Math.floor(diff/3600000)%24,Math.floor(diff/60000)%60,Math.floor(diff/1000)%60];label.innerHTML="<span>Next celebration</span><b>"+next.name+"</b>";["d","h","m","s"].forEach((id,i)=>{const el=document.getElementById(id);if(el)el.textContent=pad(vals[i]);const lab=el?.nextElementSibling;if(lab)lab.textContent=["Days","Hours","Minutes","Seconds"][i]})}
-function setupReveals(){const items=document.querySelectorAll(".timeline-item,.event,.travel-route>div,.family-grid>div");if(!("IntersectionObserver"in window)){items.forEach(e=>e.classList.add("is-visible"));return}const observer=new IntersectionObserver((entries,obs)=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("is-visible");obs.unobserve(e.target)}}),{threshold:.12});items.forEach(e=>{e.style.opacity=".001";e.style.transform="translateY(12px)";e.style.transition="opacity .55s ease,transform .55s ease";observer.observe(e)})}
-document.addEventListener("DOMContentLoaded",()=>{renderCountdown();setInterval(renderCountdown,1000);setupReveals()});
+const target=new Date("2026-12-09T11:00:00+05:30").getTime();
+const ids=["d","h","m","s"];
+function tick(){
+  const x=Math.max(0,target-Date.now());
+  const v=[Math.floor(x/86400000),Math.floor(x/3600000)%24,Math.floor(x/60000)%60,Math.floor(x/1000)%60];
+  v.forEach((n,i)=>{const el=document.getElementById(ids[i]);if(el)el.textContent=String(n).padStart(2,"0")});
+}
+tick();setInterval(tick,1000);
+document.addEventListener("DOMContentLoaded",()=>{
+  const hero=document.querySelector(".hero");
+  if(hero){
+    const down=document.querySelector(".down");
+    hero.addEventListener("mousemove",e=>{
+      const x=(e.clientX/innerWidth-.5)*8,y=(e.clientY/innerHeight-.5)*6;
+      hero.style.setProperty("--mx",x+"px");hero.style.setProperty("--my",y+"px");
+    });
+    if(down)down.addEventListener("click",()=>hero.classList.add("leaving"));
+  }
+  const events=document.querySelectorAll(".event");
+  if(!("IntersectionObserver" in window)){events.forEach(el=>el.classList.add("is-visible"));return}
+  events.forEach(el=>el.classList.add("reveal"));
+  const observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("is-visible");observer.unobserve(entry.target)}});
+  },{threshold:.16});
+  document.querySelectorAll(".event.reveal").forEach(el=>observer.observe(el));
+});
