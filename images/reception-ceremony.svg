@@ -1,1 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 980" preserveAspectRatio="none"><defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06101e"/><stop offset=".5" stop-color="#102342"/><stop offset="1" stop-color="#06101e"/></linearGradient><radialGradient id="g"><stop stop-color="#f3d37a" stop-opacity=".22"/><stop offset="1" stop-color="#f3d37a" stop-opacity="0"/></radialGradient></defs><rect width="720" height="980" fill="url(#b)"/><ellipse cx="360" cy="175" rx="300" ry="220" fill="url(#g)"/><rect x="16" y="16" width="688" height="948" fill="none" stroke="#e6c474" stroke-width="2" opacity=".8"/><rect x="28" y="28" width="664" height="924" fill="none" stroke="#fff0c8" opacity=".28"/><g fill="none" stroke="#d9b664" stroke-width="2"><path d="M70 18v90M180 18v65M540 18v65M650 18v90"/><path d="M70 108l-18 14v38h36v-38zM180 83l-14 12v31h28V95zM540 83l-14 12v31h28V95zM650 108l-18 14v38h36v-38z"/></g><path d="M40 205Q180 260 360 205T680 205" fill="none" stroke="#cba95d" stroke-width="1.7"/><g fill="#f6d982"><circle cx="95" cy="225" r="4"/><circle cx="180" cy="240" r="4"/><circle cx="270" cy="225" r="4"/><circle cx="360" cy="240" r="4"/><circle cx="450" cy="225" r="4"/><circle cx="540" cy="240" r="4"/><circle cx="625" cy="225" r="4"/></g><g fill="#f1d27a"><path d="M118 335l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/><path d="M602 330l5 11 11 5-11 5-5 11-5-11-11-5 11-5z"/><path d="M150 820l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/><path d="M585 790l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/></g><g fill="none" stroke="#cda85d" stroke-width="2.5" opacity=".85"><path d="M42 870q45-65 100-32q-47 11-63 70"/><path d="M678 870q-45-65-100-32q47 11 63 70"/></g><g fill="#dfbd69"><circle cx="92" cy="842" r="7"/><circle cx="112" cy="850" r="5"/><circle cx="628" cy="842" r="7"/><circle cx="608" cy="850" r="5"/></g><path d="M95 925H285M435 925H625M125 908H255M465 908H595" stroke="#d7b25f" stroke-width="1.5" opacity=".7"/><path d="M325 930l35-35 35 35" fill="none" stroke="#d7b25f" stroke-width="2" opacity=".7"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 980" preserveAspectRatio="none">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="0.9" y2="1"><stop stop-color="#07111f"/><stop offset=".52" stop-color="#122744"/><stop offset="1" stop-color="#07111f"/></linearGradient>
+ <radialGradient id="light"><stop stop-color="#e2c174" stop-opacity=".13"/><stop offset="1" stop-color="#e2c174" stop-opacity="0"/></radialGradient>
+ <pattern id="grain" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="4" cy="7" r=".8" fill="#e2c174" opacity=".06"/><circle cx="17" cy="18" r=".7" fill="#e2c174" opacity=".05"/></pattern>
+</defs>
+<rect width="720" height="980" fill="url(#bg)"/>
+<rect width="720" height="980" fill="url(#grain)"/>
+<ellipse cx="360" cy="165" rx="330" ry="230" fill="url(#light)"/>
+<rect x="18" y="18" width="684" height="944" rx="1" fill="none" stroke="#e2c174" stroke-width="1.8" opacity=".72"/>
+<rect x="30" y="30" width="660" height="920" fill="none" stroke="#e2c174" stroke-width=".8" opacity=".32"/>
+
+<!-- elegant lantern canopy -->
+<g fill="none" stroke="#ddbc6d" stroke-width="1.7">
+ <path d="M74 18 V92 M182 18 V74 M538 18 V74 M646 18 V92"/>
+ <path d="M74 92 l-14 12 v31 h28 v-31z M182 74 l-11 10 v26 h22V84z M538 74 l-11 10 v26 h22V84z M646 92 l-14 12 v31 h28v-31z"/>
+</g>
+<g fill="#f2d37a"><circle cx="74" cy="148" r="3"/><circle cx="182" cy="118" r="2.5"/><circle cx="538" cy="118" r="2.5"/><circle cx="646" cy="148" r="3"/></g>
+<!-- constellation -->
+<g fill="#f1d27a">
+ <path d="M138 188 l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/>
+ <path d="M582 188 l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/>
+ <path d="M360 128 l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/>
+ <circle cx="220" cy="182" r="2"/><circle cx="500" cy="182" r="2"/>
+</g>
+<!-- small central medallion -->
+<g transform="translate(360 190)" fill="none" stroke="#e2c174">
+ <circle r="55" stroke-width="1.8" opacity=".85"/><circle r="45" stroke-width="1" opacity=".45"/>
+ <path d="M-22 0 Q0-25 22 0 Q0 25-22 0Z" stroke-width="1.7"/>
+ <path d="M-30 0 H30 M0-30 V30" stroke-width=".8" opacity=".5"/>
+</g>
+<!-- shimmer -->
+<g fill="#f5d984" opacity=".9">
+ <path d="M108 350 l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/>
+ <path d="M612 350 l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/>
+ <path d="M180 395 l2.5 6 6 2.5-6 2.5-2.5 6-2.5-6-6-2.5 6-2.5z"/>
+ <path d="M540 395 l2.5 6 6 2.5-6 2.5-2.5 6-2.5-6-6-2.5 6-2.5z"/>
+</g>
+<!-- subtle art-deco footer -->
+<g fill="none" stroke="#d9b86c" stroke-width="1.3" opacity=".55">
+ <path d="M78 912 H260 L360 938 L460 912 H642"/>
+ <path d="M118 894 H235 L360 930 L485 894 H602"/>
+</g>
+
+</svg>

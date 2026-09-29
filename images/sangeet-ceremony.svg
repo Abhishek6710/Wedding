@@ -1,1 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 980" preserveAspectRatio="none"><defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#210b30"/><stop offset=".5" stop-color="#4a1757"/><stop offset="1" stop-color="#210b30"/></linearGradient><radialGradient id="g"><stop stop-color="#f3d37a" stop-opacity=".22"/><stop offset="1" stop-color="#f3d37a" stop-opacity="0"/></radialGradient></defs><rect width="720" height="980" fill="url(#b)"/><ellipse cx="360" cy="175" rx="300" ry="220" fill="url(#g)"/><rect x="16" y="16" width="688" height="948" fill="none" stroke="#e6c474" stroke-width="2" opacity=".8"/><rect x="28" y="28" width="664" height="924" fill="none" stroke="#fff0c8" opacity=".28"/><g fill="none" stroke="#d9b666" stroke-width="2"><path d="M38 78Q180 150 360 78T682 78"/><path d="M70 18v90M650 18v90"/></g><g fill="#f5d77b"><circle cx="82" cy="95" r="4"/><circle cx="155" cy="115" r="4"/><circle cx="225" cy="95" r="4"/><circle cx="360" cy="115" r="4"/><circle cx="495" cy="95" r="4"/><circle cx="565" cy="115" r="4"/><circle cx="638" cy="95" r="4"/></g><g transform="translate(555 205) rotate(-8)" stroke="#e4c16f" stroke-width="3"><ellipse rx="74" ry="30" fill="#a05c62"/><path d="M-74 0v65Q0 112 74 65V0" fill="#653447"/><ellipse rx="62" ry="25" fill="#c07976"/><path d="M-52-8L0 25 52-8M-52 24L0-8 52 24" fill="none" stroke-width="2"/><path d="M-55 22l-20 88M55 22l20 88" stroke-linecap="round"/></g><g fill="#f0cf75"><path d="M175 185l5 11 11 5-11 5-5 11-5-11-11-5 11-5z"/><path d="M470 270l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/></g><g fill="none" stroke="#cfa95d" stroke-width="2.5"><path d="M44 870c-25-55 7-91 47-77 37 13 40 50 12 71-19 14-38 9-39-8-1-14 11-23 24-17"/><path d="M676 870c25-55-7-91-47-77-37 13-40 50-12 71 19 14 38 9 39-8 1-14-11-23-24-17"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 980" preserveAspectRatio="none">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="0.9" y2="1"><stop stop-color="#1c0a2b"/><stop offset=".52" stop-color="#4a1756"/><stop offset="1" stop-color="#1c0a2b"/></linearGradient>
+ <radialGradient id="light"><stop stop-color="#d9b66b" stop-opacity=".13"/><stop offset="1" stop-color="#d9b66b" stop-opacity="0"/></radialGradient>
+ <pattern id="grain" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="4" cy="7" r=".8" fill="#d9b66b" opacity=".06"/><circle cx="17" cy="18" r=".7" fill="#d9b66b" opacity=".05"/></pattern>
+</defs>
+<rect width="720" height="980" fill="url(#bg)"/>
+<rect width="720" height="980" fill="url(#grain)"/>
+<ellipse cx="360" cy="165" rx="330" ry="230" fill="url(#light)"/>
+<rect x="18" y="18" width="684" height="944" rx="1" fill="none" stroke="#d9b66b" stroke-width="1.8" opacity=".72"/>
+<rect x="30" y="30" width="660" height="920" fill="none" stroke="#d9b66b" stroke-width=".8" opacity=".32"/>
+
+<g fill="none" stroke="#d9b66b" stroke-width="1.8" opacity=".75">
+ <path d="M50 82 C125 42 175 125 250 82 S375 42 450 82 S575 125 670 82"/>
+ <path d="M78 112 C140 75 188 135 248 105"/>
+ <path d="M642 112 C580 75 532 135 472 105"/>
+</g>
+<g fill="#f0d27c">
+ <circle cx="93" cy="104" r="3"/><circle cx="158" cy="108" r="2.5"/><circle cx="562" cy="108" r="2.5"/><circle cx="627" cy="104" r="3"/>
+</g>
+<g transform="translate(360 166)">
+ <g fill="none" stroke="#e4c477" stroke-width="3">
+  <ellipse rx="78" ry="28" fill="#713a55"/>
+  <path d="M-78 0 L-62 62 Q0 100 62 62 L78 0" fill="#4d213f"/>
+  <ellipse rx="62" ry="22" fill="#b66d72"/>
+  <path d="M-55 -7 L55 7 M-55 7 L55 -7" stroke-width="1.6"/>
+  <path d="M-42 22 L-70 94 M42 22 L70 94" stroke-linecap="round"/>
+ </g>
+ <path d="M-28 -1 Q0 -24 28 -1" fill="none" stroke="#f0d27c" stroke-width="2"/>
+</g>
+<!-- understated dance gesture -->
+<g fill="none" stroke="#dcbf76" stroke-width="2.2" stroke-linecap="round" opacity=".7">
+ <path d="M150 208 q-25 35 -10 65 q12 25 38 22"/>
+ <path d="M570 208 q25 35 10 65 q-12 25-38 22"/>
+ <path d="M146 207 q-20-24-38-12 q-15 10 2 26"/>
+ <path d="M574 207 q20-24 38-12 q15 10-2 26"/>
+</g>
+<g fill="#f2d37b">
+ <path d="M206 212 l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/>
+ <path d="M514 212 l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/>
+</g>
+<g fill="none" stroke="#d9b66b" stroke-width="1.5" opacity=".45">
+ <path d="M55 292 Q130 260 205 292"/>
+ <path d="M515 292 Q590 260 665 292"/>
+</g>
+
+</svg>
