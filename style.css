@@ -1501,30 +1501,30 @@ footer{background:#230610;border-top:1px solid rgba(199,154,69,.3)}footer small{
   padding:318px 58px 48px;
   background-color:var(--event-bg);
   background-repeat:no-repeat;
-  background-position:center top;
-  background-size:100% 330px;
+  background-position:center top, left top;
+  background-size:100% 330px, 200% 660px;
   border-radius:4px;
 }
 .event:before{inset:9px;border-color:rgba(255,255,255,.42)}
 .haldi{
   --event-bg:#f6e0aa;--event-ink:#4a1b10;--event-muted:#76563a;--event-gold:#9a6518;
   background-image:linear-gradient(to bottom,transparent 52%,rgba(246,224,170,.35) 78%,#f6e0aa 100%),url("images/ceremony-sprite.webp");
-  background-position:center top;
+  background-position:center top, left top;
 }
 .sangeet{
   --event-bg:#291035;--event-ink:#fff5e5;--event-muted:#e8d8df;--event-gold:#efca72;
   background-image:linear-gradient(to bottom,transparent 52%,rgba(41,16,53,.35) 78%,#291035 100%),url("images/ceremony-sprite.webp");
-  background-position:right top;
+  background-position:center top, right top;
 }
 .wedding{
   --event-bg:#5a0b20;--event-ink:#fff3df;--event-muted:#edd8d0;--event-gold:#efc76b;
   background-image:linear-gradient(to bottom,transparent 52%,rgba(90,11,32,.35) 78%,#5a0b20 100%),url("images/ceremony-sprite.webp");
-  background-position:left bottom;
+  background-position:center top, left bottom;
 }
 .reception{
   --event-bg:#081d35;--event-ink:#fff4df;--event-muted:#ded9d1;--event-gold:#f0c86d;
   background-image:linear-gradient(to bottom,transparent 52%,rgba(8,29,53,.28) 78%,#081d35 100%),url("images/ceremony-sprite.webp");
-  background-position:right bottom;
+  background-position:center top, right bottom;
 }
 @media(max-width:720px){
   .events{padding-left:12px;padding-right:12px}
@@ -1533,14 +1533,14 @@ footer{background:#230610;border-top:1px solid rgba(199,154,69,.3)}footer small{
     min-height:0;
     margin-top:28px;
     padding:222px 22px 34px;
-    background-size:100% 228px;
+    background-size:100% 228px, 200% 456px;
   }
   .event h3{font-size:clamp(46px,13.5vw,60px)}
   .event .tag{font-size:19px}
   .event .facts{margin-top:25px}
 }
 @media(max-width:390px){
-  .event{padding:214px 18px 30px;background-size:100% 220px}
+  .event{padding:214px 18px 30px;background-size:100% 220px, 200% 440px}
   .event h3{font-size:45px}
   .event .tag{font-size:18px}
 }
