@@ -1604,3 +1604,15 @@ footer{background:#230610;border-top:1px solid rgba(199,154,69,.3)}footer small{
   .story-note .sign b{font-size:31px}
   .symbol{font-size:19px!important}
 }
+
+/* Photo rendering for uploaded couple photos */
+.story-grid .photo,
+.gallery .photo{isolation:isolate}
+.story-grid .photo img,
+.gallery .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:0}
+.story-grid .photo:before,
+.gallery .photo:before{z-index:1}
+@media(max-width:720px){
+  .story-grid .photo{max-width:520px;width:100%;margin:0 auto}
+  .gallery .grid{gap:12px}
+}
