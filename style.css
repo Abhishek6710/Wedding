@@ -1410,3 +1410,21 @@ footer{background:#230610;border-top:1px solid rgba(199,154,69,.3)}footer small{
 @media(max-width:390px){
  .event{padding:250px 18px 30px}.event>strong{left:20px;top:22px;width:35px;height:35px;font-size:20px}.event .symbol{right:21px;top:25px;font-size:28px}.event h3{font-size:48px}.event .tag{font-size:18px}.event .facts{gap:16px 8px}.event .facts b{font-size:10.5px}
 }
+/* ---------- Lively countdown ---------- */
+#clock{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;max-width:760px;margin:28px auto 22px}
+#clock>div{position:relative;padding:22px 12px 16px;border:1px solid rgba(199,154,69,.42);background:rgba(255,248,233,.58);box-shadow:0 12px 28px rgba(74,27,16,.08);overflow:hidden}
+#clock>div:before{content:"";position:absolute;inset:6px;border:1px solid rgba(199,154,69,.22);pointer-events:none}
+#clock>div:after{content:"";position:absolute;top:-45%;left:-25%;width:150%;height:100%;background:radial-gradient(circle,rgba(255,214,115,.26),transparent 58%);animation:countGlow 3.8s ease-in-out infinite}
+#clock>div:nth-child(2):after{animation-delay:.7s}#clock>div:nth-child(3):after{animation-delay:1.4s}#clock>div:nth-child(4):after{animation-delay:2.1s}
+#clock b,#clock span{position:relative;z-index:2}
+#clock b{display:block;font:500 clamp(42px,5vw,62px)/.9 "Cormorant Garamond",serif;color:#741b35;letter-spacing:-1px}
+#clock span{display:block;margin-top:9px;font:700 8px/1 Manrope,sans-serif;text-transform:uppercase;letter-spacing:2px;color:#9a6e34}
+@keyframes countGlow{0%,100%{transform:translateX(-8%) scale(.9);opacity:.35}50%{transform:translateX(8%) scale(1.05);opacity:.8}}
+@media(max-width:720px){
+ #clock{grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin:22px auto 18px;padding:0 2px}
+ #clock>div{padding:17px 5px 13px}
+ #clock>div:before{inset:4px}
+ #clock b{font-size:clamp(28px,9.5vw,42px)}
+ #clock span{font-size:6px;letter-spacing:1px;margin-top:7px}
+}
+@media(max-width:390px){#clock{gap:5px}#clock>div{padding:15px 3px 11px}#clock b{font-size:30px}#clock span{font-size:5.5px}}
