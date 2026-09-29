@@ -1545,46 +1545,70 @@ footer{background:#230610;border-top:1px solid rgba(199,154,69,.3)}footer small{
   .event .tag{font-size:18px}
 }
 
-/* ---------- Final sprite crop fix: one artwork per card ---------- */
+/* ---------- Final ceremony artwork fix ---------- */
+/*
+  The artwork source is an 800x300 2x2 sprite.
+  Each ceremony panel is therefore 400x150 (8:3).
+  Keep that ratio when displaying each panel so the artwork stays
+  sharp and the colours are not distorted by vertical stretching.
+*/
 .event{
   background-image:none!important;
   background-color:var(--event-bg)!important;
-  padding-top:318px;
+  padding-top:300px;
 }
+
 .event:after{
   content:"";
   display:block;
   position:absolute;
   inset:0 auto auto 0;
   width:100%;
-  height:330px;
+  height:270px;
   z-index:1;
-  border:0!important;
-  border-radius:0!important;
-  right:auto!important;
-  bottom:auto!important;
-  transform:none!important;
-  font-size:0!important;
-  color:transparent!important;
-  background-repeat:no-repeat;
-  background-position:center top, left top;
-  background-size:100% 100%, 200% 200%;
-  background-image:linear-gradient(to bottom,transparent 72%,rgba(0,0,0,0) 80%,color-mix(in srgb,var(--event-bg) 28%,transparent) 91%,var(--event-bg) 100%),url("images/ceremony-art-clean.webp");
   pointer-events:none;
+  background-repeat:no-repeat;
+  background-position:center top,left top;
+  background-size:100% 100%,200% auto;
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 82%,
+      color-mix(in srgb,var(--event-bg) 7%,transparent) 91%,
+      var(--event-bg) 100%
+    ),
+    url("images/ceremony-art-clean.webp");
 }
+
 .haldi:after{background-position:center top,left top}
 .sangeet:after{background-position:center top,right top}
 .wedding:after{background-position:center top,left bottom}
 .reception:after{background-position:center top,right bottom}
-.event>strong,.event>div:last-child{z-index:5}
-@media(max-width:720px){
-  .event{padding-top:222px}
-  .event:after{height:228px}
-}
-@media(max-width:390px){
-  .event{padding-top:214px}
-  .event:after{height:220px}
+
+.event>strong,
+.event>div:last-child{
+  position:relative;
+  z-index:5;
 }
 
-/* Ceremony artwork: visible, softly blended, no pixel-sharpening. */
-.event:after{filter:blur(.2px);transform:scale(1.001);}
+@media(max-width:720px){
+  .event{
+    padding-top:200px;
+  }
+
+  .event:after{
+    height:180px;
+    background-size:100% 100%,200% auto;
+  }
+}
+
+@media(max-width:390px){
+  .event{
+    padding-top:190px;
+  }
+
+  .event:after{
+    height:170px;
+  }
+}
