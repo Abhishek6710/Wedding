@@ -1457,22 +1457,22 @@ footer{background:#230610;border-top:1px solid rgba(199,154,69,.3)}footer small{
 .event .symbol{display:none}
 .haldi{
   --event-bg:#f3d27d;--event-ink:#4a1b10;--event-muted:#73533a;--event-gold:#8d560f;
-  background-image:linear-gradient(to bottom,transparent 0%,transparent 57%,rgba(243,210,125,.12) 68%,#f3d27d 100%),url("images/ceremony-art-clean.webp");
+  background-image:linear-gradient(to bottom,transparent 0%,transparent 57%,rgba(243,210,125,.12) 68%,#f3d27d 100%),url("images/ceremony-sprite.webp");
   background-position:center top,left top;
 }
 .sangeet{
   --event-bg:#291034;--event-ink:#fff6e7;--event-muted:#ead9df;--event-gold:#efc96f;
-  background-image:linear-gradient(to bottom,transparent 0%,transparent 57%,rgba(41,16,52,.22) 72%,#291034 100%),url("images/ceremony-art-clean.webp");
+  background-image:linear-gradient(to bottom,transparent 0%,transparent 57%,rgba(41,16,52,.22) 72%,#291034 100%),url("images/ceremony-sprite.webp");
   background-position:center top,right top;
 }
 .wedding{
   --event-bg:#57091d;--event-ink:#fff3df;--event-muted:#edd9d0;--event-gold:#f0c96f;
-  background-image:linear-gradient(to bottom,transparent 0%,transparent 57%,rgba(87,9,29,.22) 72%,#57091d 100%),url("images/ceremony-art-clean.webp");
+  background-image:linear-gradient(to bottom,transparent 0%,transparent 57%,rgba(87,9,29,.22) 72%,#57091d 100%),url("images/ceremony-sprite.webp");
   background-position:center top,left bottom;
 }
 .reception{
   --event-bg:#081c33;--event-ink:#fff4df;--event-muted:#dedbe0;--event-gold:#f0c96f;
-  background-image:linear-gradient(to bottom,transparent 0%,transparent 57%,rgba(8,28,51,.18) 72%,#081c33 100%),url("images/ceremony-art-clean.webp");
+  background-image:linear-gradient(to bottom,transparent 0%,transparent 57%,rgba(8,28,51,.18) 72%,#081c33 100%),url("images/ceremony-sprite.webp");
   background-position:center top,right bottom;
 }
 @media(max-width:720px){
@@ -1508,22 +1508,22 @@ footer{background:#230610;border-top:1px solid rgba(199,154,69,.3)}footer small{
 .event:before{inset:9px;border-color:rgba(255,255,255,.42)}
 .haldi{
   --event-bg:#f6e0aa;--event-ink:#4a1b10;--event-muted:#76563a;--event-gold:#9a6518;
-  background-image:linear-gradient(to bottom,transparent 52%,rgba(246,224,170,.35) 78%,#f6e0aa 100%),url("images/ceremony-art-clean.webp");
+  background-image:linear-gradient(to bottom,transparent 52%,rgba(246,224,170,.35) 78%,#f6e0aa 100%),url("images/ceremony-sprite.webp");
   background-position:center top, left top;
 }
 .sangeet{
   --event-bg:#291035;--event-ink:#fff5e5;--event-muted:#e8d8df;--event-gold:#efca72;
-  background-image:linear-gradient(to bottom,transparent 52%,rgba(41,16,53,.35) 78%,#291035 100%),url("images/ceremony-art-clean.webp");
+  background-image:linear-gradient(to bottom,transparent 52%,rgba(41,16,53,.35) 78%,#291035 100%),url("images/ceremony-sprite.webp");
   background-position:center top, right top;
 }
 .wedding{
   --event-bg:#5a0b20;--event-ink:#fff3df;--event-muted:#edd8d0;--event-gold:#efc76b;
-  background-image:linear-gradient(to bottom,transparent 52%,rgba(90,11,32,.35) 78%,#5a0b20 100%),url("images/ceremony-art-clean.webp");
+  background-image:linear-gradient(to bottom,transparent 52%,rgba(90,11,32,.35) 78%,#5a0b20 100%),url("images/ceremony-sprite.webp");
   background-position:center top, left bottom;
 }
 .reception{
   --event-bg:#081d35;--event-ink:#fff4df;--event-muted:#ded9d1;--event-gold:#f0c86d;
-  background-image:linear-gradient(to bottom,transparent 52%,rgba(8,29,53,.28) 78%,#081d35 100%),url("images/ceremony-art-clean.webp");
+  background-image:linear-gradient(to bottom,transparent 52%,rgba(8,29,53,.28) 78%,#081d35 100%),url("images/ceremony-sprite.webp");
   background-position:center top, right bottom;
 }
 @media(max-width:720px){
@@ -1545,70 +1545,43 @@ footer{background:#230610;border-top:1px solid rgba(199,154,69,.3)}footer small{
   .event .tag{font-size:18px}
 }
 
-/* ---------- Final ceremony artwork fix ---------- */
-/*
-  The artwork source is an 800x300 2x2 sprite.
-  Each ceremony panel is therefore 400x150 (8:3).
-  Keep that ratio when displaying each panel so the artwork stays
-  sharp and the colours are not distorted by vertical stretching.
-*/
+/* ---------- Final sprite crop fix: one artwork per card ---------- */
 .event{
   background-image:none!important;
   background-color:var(--event-bg)!important;
-  padding-top:300px;
+  padding-top:318px;
 }
-
 .event:after{
   content:"";
   display:block;
   position:absolute;
   inset:0 auto auto 0;
   width:100%;
-  height:270px;
+  height:330px;
   z-index:1;
-  pointer-events:none;
+  border:0!important;
+  border-radius:0!important;
+  right:auto!important;
+  bottom:auto!important;
+  transform:none!important;
+  font-size:0!important;
+  color:transparent!important;
   background-repeat:no-repeat;
-  background-position:center top,left top;
-  background-size:100% 100%,200% auto;
-  background-image:
-    linear-gradient(
-      to bottom,
-      transparent 0%,
-      transparent 82%,
-      color-mix(in srgb,var(--event-bg) 7%,transparent) 91%,
-      var(--event-bg) 100%
-    ),
-    url("images/ceremony-art-clean.webp");
+  background-position:center top, left top;
+  background-size:100% 100%, 200% 200%;
+  background-image:linear-gradient(to bottom,transparent 72%,rgba(0,0,0,0) 80%,color-mix(in srgb,var(--event-bg) 28%,transparent) 91%,var(--event-bg) 100%),url("images/ceremony-sprite.webp");
+  pointer-events:none;
 }
-
 .haldi:after{background-position:center top,left top}
 .sangeet:after{background-position:center top,right top}
 .wedding:after{background-position:center top,left bottom}
 .reception:after{background-position:center top,right bottom}
-
-.event>strong,
-.event>div:last-child{
-  position:relative;
-  z-index:5;
-}
-
+.event>strong,.event>div:last-child{z-index:5}
 @media(max-width:720px){
-  .event{
-    padding-top:200px;
-  }
-
-  .event:after{
-    height:180px;
-    background-size:100% 100%,200% auto;
-  }
+  .event{padding-top:222px}
+  .event:after{height:228px}
 }
-
 @media(max-width:390px){
-  .event{
-    padding-top:190px;
-  }
-
-  .event:after{
-    height:170px;
-  }
+  .event{padding-top:214px}
+  .event:after{height:220px}
 }
