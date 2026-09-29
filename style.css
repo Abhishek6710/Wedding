@@ -1428,3 +1428,67 @@ footer{background:#230610;border-top:1px solid rgba(199,154,69,.3)}footer small{
  #clock span{font-size:6px;letter-spacing:1px;margin-top:7px}
 }
 @media(max-width:390px){#clock{gap:5px}#clock>div{padding:15px 3px 11px}#clock b{font-size:30px}#clock span{font-size:5.5px}}
+
+/* ---------- Final ceremony artwork system ----------
+   Rich raster artwork is used as a sprite; HTML remains responsible for all typography/details.
+   Each event is one continuous card, with the artwork fading naturally into its own paper colour.
+*/
+.event{
+  --event-bg:#2b102f;
+  position:relative;
+  width:min(760px,100%);
+  max-width:760px;
+  min-height:760px;
+  margin:48px auto 0;
+  padding:360px 72px 54px;
+  background-color:var(--event-bg);
+  background-repeat:no-repeat;
+  background-position:center top,left top;
+  background-size:100% 390px,200% 780px;
+  border:1px solid rgba(228,197,111,.72);
+  border-radius:3px;
+  box-shadow:0 26px 70px rgba(49,12,25,.16);
+  overflow:hidden;
+  isolation:isolate;
+}
+.event:before{inset:10px;z-index:2;border:1px solid rgba(255,255,255,.34);pointer-events:none}
+.event:after{display:none}
+.event>div:last-child{position:relative;z-index:5}
+.event .symbol{display:none}
+.haldi{
+  --event-bg:#f3d27d;--event-ink:#4a1b10;--event-muted:#73533a;--event-gold:#8d560f;
+  background-image:linear-gradient(to bottom,transparent 0%,transparent 57%,rgba(243,210,125,.12) 68%,#f3d27d 100%),url("images/ceremony-sprite.webp");
+  background-position:center top,left top;
+}
+.sangeet{
+  --event-bg:#291034;--event-ink:#fff6e7;--event-muted:#ead9df;--event-gold:#efc96f;
+  background-image:linear-gradient(to bottom,transparent 0%,transparent 57%,rgba(41,16,52,.22) 72%,#291034 100%),url("images/ceremony-sprite.webp");
+  background-position:center top,right top;
+}
+.wedding{
+  --event-bg:#57091d;--event-ink:#fff3df;--event-muted:#edd9d0;--event-gold:#f0c96f;
+  background-image:linear-gradient(to bottom,transparent 0%,transparent 57%,rgba(87,9,29,.22) 72%,#57091d 100%),url("images/ceremony-sprite.webp");
+  background-position:center top,left bottom;
+}
+.reception{
+  --event-bg:#081c33;--event-ink:#fff4df;--event-muted:#dedbe0;--event-gold:#f0c96f;
+  background-image:linear-gradient(to bottom,transparent 0%,transparent 57%,rgba(8,28,51,.18) 72%,#081c33 100%),url("images/ceremony-sprite.webp");
+  background-position:center top,right bottom;
+}
+@media(max-width:720px){
+  .event{width:100%;max-width:560px;min-height:0;margin:30px auto 0;padding:232px 22px 34px;background-size:100% 232px,200% 464px;background-position:center top,left top}
+  .sangeet{background-position:center top,right top}
+  .wedding{background-position:center top,left bottom}
+  .reception{background-position:center top,right bottom}
+  .event>strong{top:23px;left:24px;width:38px;height:38px;font-size:21px}
+  .event h3{font-size:clamp(48px,14vw,62px)}
+  .event .tag{font-size:19px}
+  .event .facts{margin-top:24px}
+  .event .map{margin-top:4px}
+}
+@media(max-width:390px){
+  .event{padding:224px 18px 30px;background-size:100% 224px,200% 448px}
+  .event>strong{left:20px;top:21px;width:35px;height:35px;font-size:20px}
+  .event h3{font-size:46px}
+  .event .tag{font-size:18px}
+}
