@@ -9,3 +9,5 @@ Events:
 - 12 Dec — Reception — 7:00 PM onwards — Sai Vatika, Shankar Nagar, Nagpur
 
 Edit index.html for family names and wording. Add photographs under assets/ and replace the placeholder photo blocks with image tags.
+
+Design direction: Maharashtrian burgundy luxury.
