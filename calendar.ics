@@ -32,13 +32,4 @@ LOCATION:The Laali Imperial, Amravati, Maharashtra, India
 DESCRIPTION:Wedding muhurat 12:10 PM. Varat departs at 10:00 AM. Kathpadar Saree & Kurtas. Open in Maps: https://www.google.com/maps/place/?q=place_id:ChIJIaEc3aGl1jsRogYPOxetZpU
 URL:https://abhishek6710.github.io/Wedding/
 END:VEVENT
-BEGIN:VEVENT
-UID:reception-20261212@abhishek6710.github.io
-DTSTAMP:20260929T000000Z
-DTSTART;TZID=Asia/Kolkata:20261212T190000
-SUMMARY:Reception — Shivani & Abhishek
-LOCATION:Sai Vatika, Shankar Nagar, Nagpur, Maharashtra, India
-DESCRIPTION:7:00 PM onwards. Open in Maps: https://www.google.com/maps/place/?q=place_id:ChIJ9fRKkWLA1DsRkmvyIumsxC0
-URL:https://abhishek6710.github.io/Wedding/
-END:VEVENT
 END:VCALENDAR
